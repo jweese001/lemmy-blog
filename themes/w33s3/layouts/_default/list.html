@@ -14,16 +14,13 @@
         {{ with .Params.image }}
         <img src="{{ . }}" alt="{{ $.Title }}" class="post-image">
         {{ else }}
-        <div class="post-image" style="background: linear-gradient(135deg, #1a1a1d 0%, #2a2a2f 100%);"></div>
+        <div class="post-image"></div>
         {{ end }}
         <div class="post-content">
           <h3 class="post-title">{{ .Title }}</h3>
           <p class="post-excerpt">{{ .Summary | plainify | truncate 160 }}</p>
           <div class="post-meta">
-            <span class="post-date">
-              <span class="material-icons" style="font-size: 16px;">schedule</span>
-              {{ .Date.Format "Jan 2, 2006" }}
-            </span>
+            <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
             {{ with .Params.tags }}
             <div class="post-tags">
               {{ range first 2 . }}

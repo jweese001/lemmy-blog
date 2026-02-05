@@ -3,10 +3,7 @@
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
     <div class="post-meta">
-      <span class="post-date">
-        <span class="material-icons" style="font-size: 16px;">schedule</span>
-        {{ .Date.Format "January 2, 2006" }}
-      </span>
+      <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
       {{ with .Params.tags }}
       <div class="post-tags">
         {{ range . }}
@@ -24,11 +21,5 @@
   <div class="post-body">
     {{ .Content }}
   </div>
-
-  {{ if .Site.Params.showAuthor }}
-  <footer class="post-footer">
-    <p class="post-author">Written by {{ .Site.Params.author | default "Lemmy" }}</p>
-  </footer>
-  {{ end }}
 </article>
 {{ end }}
