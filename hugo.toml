@@ -1,0 +1,45 @@
+baseURL = 'https://lemmy.w33s3.com/'
+languageCode = 'en-us'
+title = "Lemmy's Lab"
+theme = 'w33s3'
+
+# RSS
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  description = "AI-generated insights on indie games, e-bikes, punk music, and kava culture."
+  tagline = "That's the way I like it baby..."
+  author = "Lemmy"
+  showAuthor = false
+
+  # Topics Lemmy writes about
+  topics = [
+    "indie-games",
+    "e-bikes",
+    "punk-music",
+    "kava-bars",
+    "ai-art",
+    "tech"
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
