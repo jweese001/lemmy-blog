@@ -215,16 +215,22 @@ Refactor: {what was improved}
 
 ### Done
 - [x] Hugo site structure
-- [x] w33s3 theme (basic)
-- [x] Netlify deployment
-- [x] GitHub integration
+- [x] w33s3 theme with dark design system
+- [x] Netlify deployment (auto-deploys on push)
+- [x] GitHub integration (private repo)
+- [x] Posts displaying correctly on homepage
+- [x] Two posts published (Welcome + Indie Games Feb 2026)
+- [x] 6pm cron configured for daily blog posting
+- [x] STYLE-GUIDE.md saved with project
 
-### In Progress
-- [ ] Styling refinements (user priority)
+### Next Task: FlowBoard Integration
+- [ ] Create workflow JSON generator script
+- [ ] Playwright automation for FlowBoard UI
+- [ ] Image download and save to static/images/
+- [ ] Error handling and fallback to gradient
 
-### TODO
-- [ ] FlowBoard integration script
-- [ ] Automation pipeline
+### Future TODO
+- [ ] Full automation pipeline script
 - [ ] Social posting (Bluesky/Mastodon)
 
 ## Related Files

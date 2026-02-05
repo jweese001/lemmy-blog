@@ -277,15 +277,17 @@ async def generate_post(topic: str):
 - [x] GitHub repo (private)
 - [x] Netlify deployment
 - [x] First post created
+- [x] Posts displaying on homepage (fixed future-date issue)
+- [x] 6pm cron job configured for daily posting
 
-### Phase 2: Styling (CURRENT)
-- [ ] Dark theme refinement
-- [ ] Typography improvements
-- [ ] Mobile responsiveness
-- [ ] Code syntax highlighting
-- [ ] Image optimization
+### Phase 2: Styling (COMPLETE - basic)
+- [x] Dark theme (w33s3 design system applied)
+- [x] Typography (Instrument Serif, Sora, JetBrains Mono)
+- [x] Mobile responsiveness (basic)
+- [ ] Code syntax highlighting (optional)
+- [ ] Image optimization (optional)
 
-### Phase 3: FlowBoard Integration
+### Phase 3: FlowBoard Integration (NEXT)
 - [ ] Workflow JSON generator script
 - [ ] Playwright automation for FlowBoard
 - [ ] Image download and placement
