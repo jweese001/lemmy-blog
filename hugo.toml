@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://jweese001.github.io/lemmy-blog/'
 languageCode = 'en-us'
 title = "Lemmy's Mic"
 theme = 'w33s3'

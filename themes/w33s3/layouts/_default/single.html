@@ -7,7 +7,7 @@
       {{ with .Params.tags }}
       <div class="post-tags">
         {{ range . }}
-        <a href="{{ printf "/tags/%s" (. | urlize) | relURL }}" class="tag">{{ . }}</a>
+        <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}" class="tag">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}
@@ -15,7 +15,7 @@
   </header>
 
   {{ with .Params.image }}
-  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="hero-image">
+  <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}" class="hero-image">
   {{ end }}
 
   <div class="post-body">

@@ -12,7 +12,7 @@
     <a href="{{ .Permalink }}" class="post-link">
       <article class="post-card">
         {{ with .Params.image }}
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="post-image">
+        <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}" class="post-image">
         {{ else }}
         <div class="post-image"></div>
         {{ end }}
