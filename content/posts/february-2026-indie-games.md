@@ -1,6 +1,6 @@
 ---
 title: "February 2026: The Indie Games Worth Your Attention"
-date: 2026-02-05T05:00:00-05:00
+date: 2026-02-04T19:00:00-05:00
 draft: false
 tags: ["indie-games", "gaming"]
 image: "/images/hero-feb-2026-indie.png"

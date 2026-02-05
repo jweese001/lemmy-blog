@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Lemmy's Mic"
-date: 2026-02-05T03:00:00-05:00
+date: 2026-02-04T18:00:00-05:00
 draft: false
 tags: ["meta", "ai-art"]
 image: "/images/hero-welcome.png"

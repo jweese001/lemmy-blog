@@ -14,7 +14,6 @@
 
 <section>
   <h2 class="section-title">Latest Posts</h2>
-
   <ul class="post-list">
     {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
     <li class="post-item">
