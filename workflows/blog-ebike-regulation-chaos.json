@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "id": "blog-ebike-regulation-chaos-1770334349639",
+    "name": "Hero: E-Bike Regulation Chaos: Why 2026 Is a Mess for Riders",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": -277.08483768977715,
+          "y": 9.625089836970922
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Urban",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic urban photography, golden hour fading to blue. Rain-slicked surfaces, reflections, integrated bike lights cutting through atmosphere. Modern, sleek, aspirational."
+        },
+        "measured": {
+          "width": 220,
+          "height": 212
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": -150.91324343031133,
+          "y": 252.87190616587142
+        },
+        "data": {
+          "label": "Setting",
+          "description": "City street at dusk, wet pavement reflecting lights, urban skyline silhouette, streetlights creating pools of warm light, modern architecture"
+        },
+        "measured": {
+          "width": 220,
+          "height": 208
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "prop-1",
+        "type": "prop",
+        "position": {
+          "x": 180.79788428058083,
+          "y": 62.49699600284234
+        },
+        "data": {
+          "label": "Prop",
+          "description": "Sleek modern e-bike with integrated lights glowing, clean minimalist design, quality craftsmanship visible"
+        },
+        "measured": {
+          "width": 220,
+          "height": 208
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": -36.51766463506229,
+          "y": 501.886566803776
+        },
+        "data": {
+          "label": "Action",
+          "content": "An e-bike parked at a crossroads with multiple conflicting road signs and regulatory symbols, urban dusk setting, rain-slicked streets reflecting city lights"
+        },
+        "measured": {
+          "width": 220,
+          "height": 230
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 225.01802398294598,
+          "y": 349.002644649274
+        },
+        "data": {
+          "label": "Negative",
+          "content": "blurry, low quality, text, watermark, cheap looking, cluttered, daytime bright sun, amateur"
+        },
+        "measured": {
+          "width": 220,
+          "height": 208
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 496.1667864492945,
+          "y": 535.4602293411829
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-flash",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        },
+        "measured": {
+          "width": 220,
+          "height": 143
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 712.4609480369503,
+          "y": 202.8839221545021
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "Sleek modern e-bike with integrated lights glowing, clean minimalist design, quality craftsmanship visible. Setting: City street at dusk, wet pavement reflecting lights, urban skyline silhouette, streetlights creating pools of warm light, modern architecture. [REPLACE: Describe the specific moment - e.g., 'E-bike parked under streetlight, rain droplets on frame, sense of journey ahead'] Style: Dark, moody atmosphere with high contrast lighting. Cinematic urban photography, golden hour fading to blue. Rain-slicked surfaces, reflections, integrated bike lights cutting through atmosphere. Modern, sleek, aspirational..",
+          "status": "error",
+          "error": "Gemini API error (400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/googl"
+        },
+        "measured": {
+          "width": 150,
+          "height": 319
+        },
+        "selected": true,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-prop-output",
+        "source": "prop-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config",
+        "selected": false
+      }
+    ],
+    "groups": [],
+    "createdAt": 1770334349639,
+    "updatedAt": 1770334349639
+  },
+  "exportedAt": 1770334349639
+}
