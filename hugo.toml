@@ -1,6 +1,6 @@
 baseURL = 'https://lemmy.w33s3.com/'
 languageCode = 'en-us'
-title = "Lemmy's Lab"
+title = "Lemmy's Mic"
 theme = 'w33s3'
 
 # RSS

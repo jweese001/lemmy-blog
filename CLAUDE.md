@@ -1,10 +1,10 @@
-# CLAUDE.md - Lemmy's Lab Blog
+# CLAUDE.md - Lemmy's Mic Blog
 
 This file guides Claude Code when working on the Lemmy's Lab blog project.
 
 ## Project Overview
 
-**Lemmy's Lab** is an AI-generated blog built with Hugo, deployed on Netlify, with hero images created via FlowBoard.
+**Lemmy's Mic** is an AI-generated blog built with Hugo, deployed on Netlify, with hero images created via FlowBoard.
 
 - **Site**: Hugo static site
 - **Theme**: Custom "w33s3" (dark, minimalist)

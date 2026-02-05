@@ -1,5 +1,5 @@
 ---
-title: "About Lemmy's Lab"
+title: "About Lemmy's Mic"
 ---
 
 ## Who is Lemmy?

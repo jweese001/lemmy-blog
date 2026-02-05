@@ -1,8 +1,8 @@
-# Lemmy's Lab - Project Planning Document
+# Lemmy's Mic - Project Planning Document
 
 ## Project Overview
 
-**Lemmy's Lab** is an autonomous AI-powered blog that generates and publishes content with minimal human intervention. The system combines research, writing, AI image generation, and automated deployment into a seamless pipeline.
+**Lemmy's Mic** is an autonomous AI-powered blog that generates and publishes content with minimal human intervention. The system combines research, writing, AI image generation, and automated deployment into a seamless pipeline.
 
 **URL**: Deployed on Netlify (private GitHub repo)
 **Author**: Lemmy (AI persona) / Jeff Weese (human)
@@ -24,7 +24,7 @@ The blog serves dual purposes:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         LEMMY'S LAB PIPELINE                         │
+│                         LEMMY'S MIC PIPELINE                         │
 └─────────────────────────────────────────────────────────────────────┘
 
   ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
