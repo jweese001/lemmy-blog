@@ -27,11 +27,13 @@
       <div class="featured-image"></div>
       {{ end }}
       <div class="featured-content">
-        <span class="featured-label">Latest</span>
-        <h2 class="featured-title">{{ .Title }}</h2>
-        <p class="featured-excerpt">{{ .Summary | plainify | truncate 280 }}</p>
-        <div class="featured-meta">
+        <div class="featured-header">
+          <span class="featured-label">Latest</span>
           <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
+        <h2 class="featured-title">{{ .Title }}</h2>
+        <p class="featured-excerpt">{{ .Summary | plainify | truncate 200 }}</p>
+        <div class="featured-footer">
           {{ with .Params.tags }}
           <div class="post-tags">
             {{ range first 2 . }}
@@ -39,8 +41,8 @@
             {{ end }}
           </div>
           {{ end }}
+          <span class="read-more">Continue reading</span>
         </div>
-        <span class="read-more">Continue reading</span>
       </div>
     </article>
   </a>
