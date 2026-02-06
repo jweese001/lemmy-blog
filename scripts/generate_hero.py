@@ -372,17 +372,28 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
     raise RuntimeError("No image in Gemini response")
 
 
-def save_image(image_bytes: bytes, slug: str) -> Path:
-    """Save image to the static/images directory."""
+def save_image(image_bytes: bytes, slug: str, quality: int = 85) -> Path:
+    """Save image to the static/images directory as optimized JPEG."""
+    from PIL import Image
+    import io
+    
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
 
-    filename = f"hero-{slug}.png"
+    # Convert to JPEG for web optimization
+    filename = f"hero-{slug}.jpg"
     output_path = IMAGE_DIR / filename
 
-    with open(output_path, "wb") as f:
-        f.write(image_bytes)
-
-    print(f"Image saved: {output_path}")
+    # Load image and convert to RGB (JPEG doesn't support alpha)
+    img = Image.open(io.BytesIO(image_bytes))
+    if img.mode in ('RGBA', 'P'):
+        img = img.convert('RGB')
+    
+    # Save as optimized JPEG
+    img.save(output_path, 'JPEG', quality=quality, optimize=True)
+    
+    # Report file size
+    size_kb = output_path.stat().st_size / 1024
+    print(f"Image saved: {output_path} ({size_kb:.0f} KB)")
     return output_path
 
 
@@ -401,7 +412,7 @@ def create_gradient_fallback(slug: str) -> Path:
             alpha = int(255 * (1 - y / height) * 0.1)
             draw.line([(0, y), (width, y)], fill=(59, 130, 246, alpha))
 
-        output_path = IMAGE_DIR / f"hero-{slug}.png"
+        output_path = IMAGE_DIR / f"hero-{slug}.jpg"
         IMAGE_DIR.mkdir(parents=True, exist_ok=True)
         img.save(output_path)
         print(f"Created fallback gradient: {output_path}")
@@ -496,7 +507,7 @@ def main():
         print("=" * 60)
         print(f"Workflow: {workflow_path}")
         print(f"Image:    {output_path}")
-        print(f'\nAdd to post frontmatter: image: "/images/hero-{slug}.png"')
+        print(f'\nAdd to post frontmatter: image: "/images/hero-{slug}.jpg"')
 
     except Exception as e:
         print(f"\nError generating image: {e}", file=sys.stderr)

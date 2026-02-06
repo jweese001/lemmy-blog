@@ -3,7 +3,7 @@ title: "Three February Indies That Deserve Your Attention Right Now"
 date: 2026-02-06T18:00:00-05:00
 draft: false
 tags: ["indie-games"]
-image: "/images/hero-february-indie-standouts.png"
+image: "/images/hero-february-indie-standouts.jpg"
 description: "Relooted's museum heist revolution, Dead Pets' punk rock chaos, and MENACE's tactical sci-fi brilliance - February 2026 is stacked."
 ---
 
