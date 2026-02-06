@@ -12,10 +12,47 @@
 </div>
 {{ end }}
 
-<section>
-  <h2 class="section-title">Latest Posts</h2>
-  <ul class="post-list">
-    {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $featured := first 1 $posts }}
+{{ $rest := after 1 $posts | first 9 }}
+
+<!-- Featured Post -->
+{{ range $featured }}
+<section class="featured-section">
+  <a href="{{ .Permalink }}" class="post-link">
+    <article class="featured-card">
+      {{ with .Params.image }}
+      <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}" class="featured-image">
+      {{ else }}
+      <div class="featured-image"></div>
+      {{ end }}
+      <div class="featured-content">
+        <span class="featured-label">Latest</span>
+        <h2 class="featured-title">{{ .Title }}</h2>
+        <p class="featured-excerpt">{{ .Summary | plainify | truncate 280 }}</p>
+        <div class="featured-meta">
+          <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ with .Params.tags }}
+          <div class="post-tags">
+            {{ range first 2 . }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        <span class="read-more">Continue reading</span>
+      </div>
+    </article>
+  </a>
+</section>
+{{ end }}
+
+<!-- Remaining Posts -->
+{{ if $rest }}
+<section class="posts-section">
+  <h2 class="section-title">More Posts</h2>
+  <ul class="post-grid">
+    {{ range $rest }}
     <li class="post-item">
       <a href="{{ .Permalink }}" class="post-link">
         <article class="post-card">
@@ -26,17 +63,18 @@
           {{ end }}
           <div class="post-content">
             <h3 class="post-title">{{ .Title }}</h3>
-            <p class="post-excerpt">{{ .Summary | plainify | truncate 160 }}</p>
+            <p class="post-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
             <div class="post-meta">
               <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
               {{ with .Params.tags }}
               <div class="post-tags">
-                {{ range first 2 . }}
+                {{ range first 1 . }}
                 <span class="tag">{{ . }}</span>
                 {{ end }}
               </div>
               {{ end }}
             </div>
+            <span class="read-more">Continue reading</span>
           </div>
         </article>
       </a>
@@ -44,4 +82,5 @@
     {{ end }}
   </ul>
 </section>
+{{ end }}
 {{ end }}
