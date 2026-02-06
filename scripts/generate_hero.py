@@ -39,8 +39,8 @@ W33S3_STYLE = {
     "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic, no text or watermarks."
 }
 
-# Gemini API config
-GEMINI_MODEL = "gemini-2.0-flash-exp-image-generation"
+# Gemini API config - Use Gemini 3 Pro for 16:9 aspect ratio support
+GEMINI_MODEL = "gemini-3-pro-image-preview"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
@@ -209,7 +209,7 @@ def create_workflow(title: str, scene: str, slug: str, aspect_ratio: str = "16:9
                     "position": {"x": 350, "y": 100},
                     "data": {
                         "label": "Parameters",
-                        "model": "gemini-flash",
+                        "model": "gemini-pro",
                         "aspectRatio": aspect_ratio,
                         "resolution": "2K"
                     }
@@ -310,9 +310,6 @@ def build_prompt_from_workflow(workflow: dict) -> tuple[str, str]:
 
     full_prompt = "\n\n".join(filter(None, prompt_parts))
 
-    # Add aspect ratio hint to prompt (API doesn't support it as config)
-    full_prompt = f"{full_prompt}\n\nAspect ratio: {aspect_ratio} (wide cinematic format)"
-
     return full_prompt, aspect_ratio
 
 
@@ -324,9 +321,9 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
     print(f"Aspect ratio: {aspect_ratio}")
 
     generation_config = {
-        "responseModalities": ["Text", "Image"]
+        "responseModalities": ["Text", "Image"],
+        "aspectRatio": aspect_ratio  # Gemini 3 Pro supports aspectRatio
     }
-    # Note: aspectRatio not supported by this model - images will be square
 
     request_body = {
         "contents": [

@@ -104,7 +104,7 @@
         },
         "data": {
           "label": "Parameters",
-          "model": "gemini-flash",
+          "model": "gemini-pro",
           "aspectRatio": "16:9",
           "resolution": "2K"
         },
