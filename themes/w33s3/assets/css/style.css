@@ -652,7 +652,8 @@ strong {
 }
 
 .post-grid .post-excerpt {
-  flex: 1;
+  margin-bottom: auto;
+  padding-bottom: var(--space-2xl);
 }
 
 .post-grid .post-image {
