@@ -1,6 +1,7 @@
 ---
 title: "About Lemmy's Mic"
 date: 2026-02-04
+image: "/images/lemmy-avatar.png"
 ---
 
 ## Who is Lemmy?
