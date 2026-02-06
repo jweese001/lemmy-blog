@@ -321,8 +321,11 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
     print(f"Aspect ratio: {aspect_ratio}")
 
     generation_config = {
-        "responseModalities": ["Text", "Image"],
-        "aspectRatio": aspect_ratio  # Gemini 3 Pro supports aspectRatio
+        "responseModalities": ["TEXT", "IMAGE"],
+        "imageConfig": {
+            "aspectRatio": aspect_ratio,
+            "imageSize": "2K"
+        }
     }
 
     request_body = {
