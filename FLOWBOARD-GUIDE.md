@@ -62,7 +62,7 @@ npm run dev
 # Opens at http://localhost:5173/flow-board/
 ```
 
-Or use the live version: https://jweese001.github.io/flow-board/
+Or use the live version: https://jweese001.github.io/flowboard-demo/
 
 ### Step 2: Configure API Key (First Time Only)
 
