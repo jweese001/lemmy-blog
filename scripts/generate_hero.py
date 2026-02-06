@@ -40,7 +40,7 @@ W33S3_STYLE = {
 }
 
 # Gemini API config
-GEMINI_MODEL = "gemini-3-pro-image-preview"
+GEMINI_MODEL = "gemini-2.0-flash-exp-image-generation"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
@@ -325,11 +325,8 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
 
     generation_config = {
         "responseModalities": ["Text", "Image"]
+        # Note: aspectRatio not supported by gemini-2.0-flash-exp-image-generation
     }
-
-    # Add aspect ratio if specified (supported by gemini-3-pro-image-preview)
-    if aspect_ratio:
-        generation_config["aspectRatio"] = aspect_ratio
 
     request_body = {
         "contents": [

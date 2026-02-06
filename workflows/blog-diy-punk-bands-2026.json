@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "project": {
-    "id": "blog-diy-punk-bands-2026-1770338431320",
-    "name": "Hero: Five DIY Punk Bands That Earned It the Hard Way",
+    "id": "blog-diy-punk-bands-2026-1770338650999",
+    "name": "Hero: DIY Punk Bands 2026",
     "nodes": [
       {
         "id": "style-1",
@@ -68,7 +68,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Crowded basement punk show, film grain, sweaty audience pressed against a tiny stage, torn band posters on brick walls, single bare bulb lighting, raw analog energy, mohawks and leather jackets in silhouette"
+          "content": "Underground punk show, raw energy, crowd moshing, sweaty basement venue"
         },
         "measured": {
           "width": 220,
@@ -235,8 +235,8 @@
       }
     ],
     "groups": [],
-    "createdAt": 1770338431320,
-    "updatedAt": 1770338431320
+    "createdAt": 1770338650999,
+    "updatedAt": 1770338650999
   },
-  "exportedAt": 1770338431320
+  "exportedAt": 1770338650999
 }
