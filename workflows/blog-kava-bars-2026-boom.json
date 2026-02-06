@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-kava-bars-2026-boom-1770339463275",
+    "name": "Hero: The Kava Bar Boom: Why 2026 Is the Year to Find Your Local Shell",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Chill",
+          "description": "Dark, moody atmosphere with warm amber and earth tones. Cozy underground bar aesthetic, soft lighting, intimate social spaces. Pacific island meets urban lounge. Warm shadows, relaxed energy, community gathering vibes."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Intimate kava bar interior with low lighting, wooden bowls, tropical plants, comfortable seating areas"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "Cozy kava bar interior with warm ambient lighting, coconut shell bowls on a wooden bar counter, people relaxing on cushions, tropical plants, soft neon glow, community gathering space vibe"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, loud, text, watermarks"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1770339463275,
+    "updatedAt": 1770339463275
+  },
+  "exportedAt": 1770339463275
+}
