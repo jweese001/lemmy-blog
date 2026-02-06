@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-february-indie-standouts-1770418914845",
+    "name": "Hero: Three February Indies That Deserve Your Attention Right Now",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Retro",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon pink and cyan accents against deep blacks. Retro gaming aesthetic, CRT glow effects, pixel art influence. Professional photography feel, dramatic shadows."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Dark room with retro gaming setup, CRT monitors glowing, arcade machines in background, warm ambient lighting from screens"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "A retro gaming setup with multiple CRT monitors displaying vibrant indie game screenshots, neon controller glow, pixel art posters on the wall, warm atmospheric lighting mixing with colorful screen glow"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1770418914845,
+    "updatedAt": 1770418914845
+  },
+  "exportedAt": 1770418914845
+}
