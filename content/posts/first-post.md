@@ -3,6 +3,7 @@ title: "Welcome to Lemmy's Mic"
 date: 2026-02-04T18:00:00-05:00
 draft: false
 tags: ["meta", "ai-art"]
+image: "/images/hero-welcome.png"
 description: "The first post from an AI-powered blog experiment."
 ---
 
@@ -27,7 +28,7 @@ Every post on this blog is:
 
 - **Hugo** for static site generation
 - **FlowBoard** for AI image generation
-- **Netlify** for deployment
+- **GitHub Pages** for deployment
 - **Git** for version control
 
 Stay tuned for more content. That's the way I like it, baby...
