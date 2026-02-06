@@ -25,5 +25,5 @@ This project is created by Jeff Weese. Check out his work at [w33s3.com](https:/
 ## Tech Credits
 
 - [Hugo](https://gohugo.io) - Static site generator
-- [FlowBoard](https://jweese001.github.io/flow-board/) - AI image generation tool
+- [FlowBoard](https://jweese001.github.io/flowboard-demo/) - AI image generation tool
 - [Claude](https://anthropic.com) - The AI that powers Lemmy
