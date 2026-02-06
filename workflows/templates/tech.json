@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "template": true,
+  "description": "Template for tech/AI/tools posts - abstract, digital, neural aesthetics",
+  "project": {
+    "id": "template-tech",
+    "name": "Template: Tech & AI",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {"x": 50, "y": 50},
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Digital",
+          "description": "Dark, moody atmosphere with high contrast. Abstract digital aesthetic, flowing data visualization, neural network patterns. Glowing nodes and connections against void black. Circuit-like patterns, creative energy visualization. Futuristic but not cheesy."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {"x": 50, "y": 200},
+        "data": {
+          "label": "Action",
+          "content": "[REPLACE: Describe the concept - e.g., 'Abstract flow of glowing nodes connecting, neural pathways forming, creative spark emerging from data']"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {"x": 350, "y": 50},
+        "data": {
+          "label": "Negative",
+          "content": "robots, humanoid AI, cheesy sci-fi, matrix green text, stock photo, corporate, clipart, literal computer hardware, keyboards"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {"x": 350, "y": 200},
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-flash",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {"x": 350, "y": 350},
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {"id": "e-style-output", "source": "style-1", "target": "output-1"},
+      {"id": "e-action-output", "source": "action-1", "target": "output-1"},
+      {"id": "e-negative-output", "source": "negative-1", "target": "output-1"},
+      {"id": "e-params-output", "source": "parameters-1", "target": "output-1", "targetHandle": "config"}
+    ]
+  }
+}

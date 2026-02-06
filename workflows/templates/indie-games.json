@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "template": true,
+  "description": "Template for indie game posts - retro gaming aesthetic with neon glow",
+  "project": {
+    "id": "template-indie-games",
+    "name": "Template: Indie Games",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {"x": 50, "y": 50},
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Retro",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon pink and cyan accents against deep blacks. Retro gaming aesthetic, CRT glow effects, pixel art influence. Professional photography feel, dramatic shadows."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {"x": 50, "y": 200},
+        "data": {
+          "label": "Setting",
+          "description": "Dark room with retro gaming setup, CRT monitors glowing, arcade machines in background, warm ambient lighting from screens"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {"x": 50, "y": 350},
+        "data": {
+          "label": "Action",
+          "content": "[REPLACE: Describe the specific scene - e.g., 'Colorful pixel art characters leap from glowing screen, sense of discovery and wonder']"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {"x": 350, "y": 50},
+        "data": {
+          "label": "Negative",
+          "content": "blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {"x": 350, "y": 200},
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-flash",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {"x": 350, "y": 350},
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {"id": "e-style-output", "source": "style-1", "target": "output-1"},
+      {"id": "e-setting-output", "source": "setting-1", "target": "output-1"},
+      {"id": "e-action-output", "source": "action-1", "target": "output-1"},
+      {"id": "e-negative-output", "source": "negative-1", "target": "output-1"},
+      {"id": "e-params-output", "source": "parameters-1", "target": "output-1", "targetHandle": "config"}
+    ]
+  }
+}

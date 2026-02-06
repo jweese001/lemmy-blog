@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "id": "blog-test-real-image-1770300338162",
+    "name": "Hero: Indie Games February 2026",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": -61.511656640746935,
+          "y": 47.12809383412861
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic."
+        },
+        "measured": {
+          "width": 220,
+          "height": 212
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": -119.19009973078846,
+          "y": 379.7885129412241
+        },
+        "data": {
+          "label": "Action",
+          "content": "Colorful pixel art characters leap from a glowing CRT monitor in a dark room, retro arcade machines in the background, neon pink and cyan light spilling across the scene, sense of discovery and wonder"
+        },
+        "measured": {
+          "width": 220,
+          "height": 230
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 374.03268462085066,
+          "y": 542.2013970236517
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-flash",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        },
+        "measured": {
+          "width": 220,
+          "height": 143
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 707.6063471582574,
+          "y": 301.9226147696681
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        },
+        "measured": {
+          "width": 150,
+          "height": 190
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config",
+        "selected": false
+      }
+    ],
+    "groups": [],
+    "createdAt": 1770300338162,
+    "updatedAt": 1770300556890
+  },
+  "exportedAt": 1770300556893
+}

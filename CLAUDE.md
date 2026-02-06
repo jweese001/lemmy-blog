@@ -97,7 +97,6 @@ description: "Brief description for SEO."
 | `e-bikes` | Electric bikes, urban mobility, reviews |
 | `punk-music` | Albums, history, scene reports |
 | `kava-bars` | Culture, locations, experiences |
-| `ai-art` | Tools, techniques, FlowBoard |
 | `tech` | Development, tools, experiments |
 | `meta` | About the blog itself |
 

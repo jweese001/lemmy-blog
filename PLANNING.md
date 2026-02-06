@@ -63,7 +63,6 @@ The blog serves dual purposes:
 | E-Bikes | `e-bikes` | Electric mobility, urban cycling, reviews |
 | Punk Music | `punk-music` | History, modern scene, album reviews |
 | Kava Bars | `kava-bars` | Culture, locations, social movement |
-| AI Art | `ai-art` | Tools, techniques, ethics, showcases |
 | Tech | `tech` | Development, tools, experiments |
 
 ### Post Structure
@@ -287,11 +286,14 @@ async def generate_post(topic: str):
 - [ ] Code syntax highlighting (optional)
 - [ ] Image optimization (optional)
 
-### Phase 3: FlowBoard Integration (NEXT)
-- [ ] Workflow JSON generator script
-- [ ] Playwright automation for FlowBoard
-- [ ] Image download and placement
-- [ ] Error handling and retries
+### Phase 3: FlowBoard Integration (COMPLETE - Manual Mode)
+- [x] Workflow JSON generator script (`scripts/generate_workflow.py`)
+- [x] Direct Gemini API script (`scripts/generate_hero.py`)
+- [x] Full post creation script (`scripts/create_post.py`)
+- [x] FLOWBOARD-GUIDE.md for Lemmy to understand the workflow
+- [x] Virtual environment with dependencies (`.venv/`)
+- [ ] Test with FlowBoard UI (load workflow, generate, save image)
+- [ ] Playwright automation (optional - for full automation later)
 
 ### Phase 4: Automation
 - [ ] Full pipeline script

@@ -1,0 +1,242 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "id": "template-ebikes",
+    "name": "Template: E-Bikes & Urban",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": -277.08483768977715,
+          "y": 9.625089836970922
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Urban",
+          "description": "Noir Comic Book Dark, moody atmosphere with high contrast shading. Heavy black ink lines. Black and White with occasional pops of earth tone color"
+        },
+        "measured": {
+          "width": 220,
+          "height": 213
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": -150.91324343031133,
+          "y": 252.87190616587142
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Underground Rock Club Center Stage"
+        },
+        "measured": {
+          "width": 220,
+          "height": 191
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "prop-1",
+        "type": "prop",
+        "position": {
+          "x": 180.79788428058083,
+          "y": 62.49699600284234
+        },
+        "data": {
+          "label": "Prop",
+          "description": "Vintage Bass Guitar"
+        },
+        "measured": {
+          "width": 220,
+          "height": 173
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": -146.1067065061412,
+          "y": 633.5856785260376
+        },
+        "data": {
+          "label": "Action",
+          "content": "Sings Franticly into microphone"
+        },
+        "measured": {
+          "width": 220,
+          "height": 195
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 225.01802398294598,
+          "y": 349.002644649274
+        },
+        "data": {
+          "label": "Negative",
+          "content": "blurry, low quality, text, watermark, cheap looking, cluttered, daytime bright sun, amateur"
+        },
+        "measured": {
+          "width": 220,
+          "height": 209
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 401.9586627355599,
+          "y": 553.7250696530294
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-flash",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        },
+        "measured": {
+          "width": 220,
+          "height": 143
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 712.4609480369503,
+          "y": 202.8839221545021
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "Close-up. New Character, Age 30 White Male Long Dark Haired Rock star with Biker Jacket and a mole on his left cheek. Vintage Bass Guitar. Setting: Underground Rock Club Center Stage. Sings Franticly into microphone Style: Noir Comic Book Dark, moody atmosphere with high contrast shading. Heavy black ink lines. Black and White with occasional pops of earth tone color.",
+          "status": "error",
+          "error": "Gemini API error (400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"
+        },
+        "measured": {
+          "width": 150,
+          "height": 305
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "shot-mla4kohl-cz2e",
+        "type": "shot",
+        "position": {
+          "x": 105.99654200285897,
+          "y": 584.8225741136778
+        },
+        "data": {
+          "label": "Shot",
+          "name": "New Shot",
+          "preset": "close-up",
+          "description": ""
+        },
+        "measured": {
+          "width": 220,
+          "height": 177
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "character-mla4lrew-2xnl",
+        "type": "character",
+        "position": {
+          "x": -373.86151150794706,
+          "y": 469.3000194549674
+        },
+        "data": {
+          "label": "Character",
+          "name": "New Character",
+          "description": "Age 30 White Male Long Dark Haired Rock star with Biker Jacket and a mole on his left cheek"
+        },
+        "measured": {
+          "width": 220,
+          "height": 213
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-prop-output",
+        "source": "prop-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1",
+        "selected": false
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config",
+        "selected": false
+      },
+      {
+        "type": "bezier",
+        "style": {
+          "strokeWidth": 2
+        },
+        "source": "shot-mla4kohl-cz2e",
+        "target": "output-1",
+        "id": "e-shot-mla4kohl-cz2e-output-1-default",
+        "selected": false
+      },
+      {
+        "type": "bezier",
+        "style": {
+          "strokeWidth": 2
+        },
+        "source": "character-mla4lrew-2xnl",
+        "target": "output-1",
+        "id": "e-character-mla4lrew-2xnl-output-1-default",
+        "selected": false
+      }
+    ],
+    "groups": [],
+    "createdAt": 1770301505133,
+    "updatedAt": 1770336845345
+  },
+  "exportedAt": 1770336845345
+}

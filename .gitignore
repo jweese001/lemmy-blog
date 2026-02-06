@@ -14,3 +14,16 @@ Thumbs.db
 
 # Hugo
 .hugo_build.lock
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets - NEVER commit
+.env
+*.key
+*secrets*
+
+# Workflow drafts (generated JSONs can be committed if wanted)
+workflows/*-test*.json
