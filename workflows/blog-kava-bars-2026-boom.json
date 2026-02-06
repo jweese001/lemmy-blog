@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "id": "blog-kava-bars-2026-boom-1770339463275",
-    "name": "Hero: The Kava Bar Boom: Why 2026 Is the Year to Find Your Local Shell",
+    "id": "blog-kava-bars-2026-boom-1770340118989",
+    "name": "Hero: Kava Bars 2026 Boom",
     "nodes": [
       {
         "id": "style-1",
@@ -38,7 +38,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Cozy kava bar interior with warm ambient lighting, coconut shell bowls on a wooden bar counter, people relaxing on cushions, tropical plants, soft neon glow, community gathering space vibe"
+          "content": "Cozy kava bar interior, warm lighting, people sharing shells, relaxed vibe"
         }
       },
       {
@@ -109,8 +109,8 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1770339463275,
-    "updatedAt": 1770339463275
+    "createdAt": 1770340118989,
+    "updatedAt": 1770340118989
   },
-  "exportedAt": 1770339463275
+  "exportedAt": 1770340118989
 }
