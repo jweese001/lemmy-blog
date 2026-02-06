@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "project": {
-    "id": "blog-february-indie-standouts-1770418914845",
+    "id": "blog-february-indie-standouts-1770420047625",
     "name": "Hero: Three February Indies That Deserve Your Attention Right Now",
     "nodes": [
       {
@@ -38,7 +38,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "A retro gaming setup with multiple CRT monitors displaying vibrant indie game screenshots, neon controller glow, pixel art posters on the wall, warm atmospheric lighting mixing with colorful screen glow"
+          "content": "Colorful pixel art characters emerging from glowing CRT monitors, retro arcade atmosphere, neon pink and cyan lighting, dark room with gaming setup, sense of discovery and excitement"
         }
       },
       {
@@ -109,8 +109,8 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1770418914845,
-    "updatedAt": 1770418914845
+    "createdAt": 1770420047625,
+    "updatedAt": 1770420047625
   },
-  "exportedAt": 1770418914845
+  "exportedAt": 1770420047625
 }
