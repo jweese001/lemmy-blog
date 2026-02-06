@@ -73,20 +73,41 @@ The punk band hero is the strongest piece - it has energy, texture, and tells a 
 
 ## Quick Wins (Things You Could Do Today)
 
-- [ ] Fix the About page date
-- [ ] Add a favicon if there isn't one
-- [ ] Style the Sources section with a left border accent
+- [x] Fix the About page date
+- [x] Add a favicon (mic icon in teal)
+- [x] Style the Sources section with a left border accent
 - [ ] Test mobile experience
 
 ---
 
 ## Implementation Priority
 
-| Priority | Item | Effort |
-|----------|------|--------|
-| High | Fix About page date bug | Low |
-| High | Featured post on homepage | Medium |
-| Medium | Style sources section | Low |
-| Medium | Consistent illustration modes | High |
-| Low | Comments/engagement | Medium |
-| Low | Lemmy mascot | High |
+| Priority | Item | Effort | Status |
+|----------|------|--------|--------|
+| High | Fix About page date bug | Low | ✅ Done |
+| High | Featured post on homepage | Medium | ✅ Done |
+| Medium | Style sources section | Low | ✅ Done |
+| Medium | Tags index page (no images) | Low | ✅ Done |
+| Medium | Consistent illustration modes | High | Pending |
+| Low | Comments/engagement | Medium | Pending |
+| Low | Lemmy mascot | High | ✅ Done (avatar on About) |
+
+---
+
+## Session Log - Feb 6, 2026
+
+### Completed This Session:
+- Featured post layout: 16:9 image on top, compact text below
+- "Continue reading →" links with arrow animation
+- 2-column grid for remaining posts with equal-height cards
+- More spacing between excerpt and footer in all cards
+- Tags index page: clean grid without image placeholders
+- Gemini 3 Pro with 16:9 aspect ratio for all image generation
+- Updated all FlowBoard templates to use gemini-pro
+- Fixed FlowBoard gemini.ts to pass aspectRatio parameter
+- Lemmy avatar image restored on About page
+
+### Pending:
+- Test mobile responsiveness
+- Consistent illustration modes per topic
+- Comments/engagement system
