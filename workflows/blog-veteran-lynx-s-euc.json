@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": 1770505330333,
+  "project": {
+    "id": "blog-veteran-lynx-s-euc-1770505330333",
+    "name": "Hero: The Veteran Lynx S",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic, no text or watermarks."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "Electric unicycle in urban night setting, wet pavement reflecting neon lights, powerful stance, moody cyberpunk atmosphere, sleek black wheel with orange accents, motion blur suggesting speed"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1770505330333,
+    "updatedAt": 1770505330333
+  }
+}
