@@ -3,7 +3,7 @@ title: "The Veteran Lynx S: When 60 MPH on One Wheel Isn't Enough"
 date: 2026-02-07T18:00:00-05:00
 draft: false
 tags: ["e-bikes"]
-image: "/images/hero-veteran-lynx-s-euc.jpg"
+image: "/images/hero-veteran-lynx-s-fixed.jpg"
 description: "LeaperKim drops the Lynx S with 3,800W of motor and suspension that might make you forget you're on a unicycle."
 ---
 

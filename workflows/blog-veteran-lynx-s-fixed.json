@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": 1770509579975,
+  "project": {
+    "id": "blog-veteran-lynx-s-fixed-1770509579975",
+    "name": "Hero: The Veteran Lynx S",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic, no text or watermarks."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "Product photography of LeaperKim Veteran Lynx S electric unicycle (EUC), all-black industrial design, single large wheel with chunky knobby off-road treaded tire, exposed metal protective roll cage frame on top with grab handles, heavy-duty visible shock absorption suspension brackets on sides, beefy tank-like aggressive stance, matte black finish throughout, professional product shot on dark background with dramatic lighting, side angle view clearly showing the distinctive cage structure and suspension system, no people"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1770509579975,
+    "updatedAt": 1770509579975
+  }
+}
