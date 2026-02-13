@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "exportedAt": 1770971005815,
+  "exportedAt": 1770971203165,
   "project": {
-    "id": "blog-molly-tuttle-punk-bluegrass-1770971005815",
+    "id": "blog-molly-tuttle-punk-bluegrass-1770971203165",
     "name": "Hero: Molly Tuttle: From Rancid Covers to Grammy Gold",
     "nodes": [
       {
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "A woman's hands on an acoustic guitar, flatpicking with intensity. Split composition: one side warm amber stage lights of a bluegrass venue, other side green punk show lighting. Film grain texture. No face visible, focus on the guitar and the contrast between two musical worlds merging."
+          "content": "Noir comic book style illustration, muted blacks and grays with selective pops of amber and green. A woman's hands flatpicking an acoustic guitar with intensity. Split composition: warm amber glow on one side (bluegrass), electric green on the other (punk). Heavy ink lines, dramatic shadows, graphic novel aesthetic. Focus on the guitar and hands, no face. Film grain texture."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1770971005815,
-    "updatedAt": 1770971005815
+    "createdAt": 1770971203165,
+    "updatedAt": 1770971203165
   }
 }
