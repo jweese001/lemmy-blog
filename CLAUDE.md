@@ -304,3 +304,40 @@ git add -A && git commit -m "Add post: Title" && git push
 ---
 
 *This is Lemmy's blog. That's the way I like it, baby...*
+
+## Article Illustration Guidelines
+
+**CRITICAL: Every article gets CUSTOM art based on its content.**
+
+### The Rule
+
+Read the article first. Extract visual hooks from the content itself. Never default to generic category imagery.
+
+### Bad (Generic Category Art)
+- Punk article → mohawk/leather jacket self-portrait
+- Indie games → generic pixel character
+- E-bikes → random bike on street
+- Kava → generic tiki aesthetic
+
+### Good (Content-Specific Art)
+Ask: What does THIS article actually discuss?
+
+| Article Subject | Visual Approach |
+|-----------------|-----------------|
+| CBGB's history | The iconic awning, Bowery street scene, venue interior |
+| Specific album | Album art interpretation, recording era aesthetic |
+| Regional punk scene | That city's landmarks, local venue culture |
+| Artist profile (Molly Tuttle) | Her actual context: acoustic guitar, bluegrass/punk fusion, stage performance |
+| Game studio spotlight | Their actual game art style, studio aesthetic |
+| Specific e-bike model | That bike's design language, intended use environment |
+
+### Process
+
+1. **Read the full article**
+2. **List 3-5 specific visual elements mentioned** (places, objects, people, events)
+3. **Choose the most compelling visual hook**
+4. **Write scene description based on THAT, not the category**
+
+### Style Stays Consistent
+
+Keep the w33s3 style (dark, moody, cinematic, neon accents). Only change the SUBJECT MATTER to match article content.
