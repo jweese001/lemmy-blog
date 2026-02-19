@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": 1771542140247,
+  "project": {
+    "id": "blog-arlo-mckinley-punk-country-1771542140247",
+    "name": "Hero: From Hardcore Basements to John Prine's Label",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark",
+          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic, no text or watermarks."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "Cincinnati basement show ambiance - dim overhead bulb casting amber light on scattered vinyl records, Gorilla Biscuits and Agnostic Front album covers visible, acoustic guitar leaning against a half-stack amp, tattooed hands reaching for a record, Rust Belt working-class texture, beer-stained carpet and show flyers on concrete walls"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1771542140247,
+    "updatedAt": 1771542140247
+  }
+}
