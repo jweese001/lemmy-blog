@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730128277,
+  "exportedAt": 1771730595511,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730128277",
+    "id": "blog-kingsong-pro-lineup-1771730595511",
     "name": "Hero: KingSong Pro Lineup Refresh",
     "nodes": [
       {
@@ -14,8 +14,8 @@
         },
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark",
-          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic, no text or watermarks."
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, or speech bubbles."
         }
       },
       {
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, heavy black ink lines, high contrast shading. An electric unicycle wheel in dramatic three-quarter view, thick bold outlines, cel-shaded shadows. Urban alley backdrop with brick walls and fire escapes, wet pavement reflecting light. Muted palette with pops of electric blue from LED indicators on the wheel. Graphic novel panel composition, no rider visible. Gritty, stylized, hand-drawn comic book feel."
+          "content": "An electric unicycle (EUC) wheel in dramatic three-quarter view. Urban alley backdrop with brick walls and fire escapes, wet pavement reflecting ambient light. The wheel is the hero \u2014 emphasize the form, tire tread, clean industrial design. Subtle LED glow strips on the wheel. No rider visible. Moody atmosphere."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730128277,
-    "updatedAt": 1771730128277
+    "createdAt": 1771730595511,
+    "updatedAt": 1771730595511
   }
 }
