@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771110459211,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-devlog-flowboard-1771110459211",
+    "name": "Hero: FlowBoard",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, muted blacks and grays with selective purple and cyan neon accents. Bird's eye view of a node graph workspace: circular nodes connected by glowing lines forming a branching tree pattern. Some nodes pulse with energy, others show small image thumbnails inside. Dark background with dramatic spotlight from above. Technical but artistic, like a circuit board meets constellation map."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771110459211,
+    "updatedAt": 1771110459211
   }
 }

@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771111274221,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-devlog-seaborne-1771111274221",
+    "name": "Hero: SeaBorne Navigation",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, muted blacks and navy blues with selective amber and cyan accents. Maritime navigation scene: a digital chart table showing coastal waters, coordinate grid overlay, a tugboat silhouette, compass rose glowing amber. Radar sweep effect in corner. Professional maritime operations feel, modern bridge equipment aesthetic. Dark dramatic lighting, no text."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771111274221,
+    "updatedAt": 1771111274221
   }
 }

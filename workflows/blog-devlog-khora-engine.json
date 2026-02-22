@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771111207380,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-devlog-khora-engine-1771111207380",
+    "name": "Hero: Khora Engine",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, muted blacks and deep blues with selective orange and teal accents. A dramatic view of a procedurally generated star system: a glowing orange sun at center, multiple planets in orbital paths shown as curved lines, one large gas giant with visible rings, scattered asteroid belt. Stars scattered in deep black background. Cinematic space scene, sense of scale and wonder. No text."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771111207380,
+    "updatedAt": 1771111207380
   }
 }

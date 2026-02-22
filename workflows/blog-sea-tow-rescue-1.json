@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1770409437965,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-sea-tow-rescue-1-1770409437965",
+    "name": "Hero: Sea-Tow Rescue",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Birds eye view of a Sea-Tow rescue boat towing a sportfish yacht on rough open ocean, dramatic waves, Sea-Tow captain visible at helm driving the rescue boat, stormy weather, high seas, tension and drama, noir comic book style, heavy black inks, high contrast, 2K resolution"
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1770409437965,
+    "updatedAt": 1770409437965
   }
 }

@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771167710828,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-devlog-ide-bridge-phase-2-1771167710828",
+    "name": "Hero: IDE Bridge Phase 2: When Your 3D Scene Talks Back",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, muted blacks and grays with selective cyan and orange color pops. Developer silhouette at a dual-monitor command center, one screen showing a 3D viewport with geometric shapes and camera gizmos, the other showing a node-based workflow editor with connected boxes. Luminous data streams flow between the two screens like electric synapses. Dramatic low-angle lighting, deep shadows, industrial tech atmosphere. Professional cinematic composition."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771167710828,
+    "updatedAt": 1771167710828
   }
 }

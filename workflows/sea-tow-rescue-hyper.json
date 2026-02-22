@@ -1,0 +1,76 @@
+{
+  "exportedAt": 1707249600000,
+  "project": {
+    "id": "sea-tow-rescue-hyper",
+    "name": "Sea Tow Rescue - Hyper Realistic",
+    "createdAt": 1707249600000,
+    "updatedAt": 1707249600000,
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": { "x": 100, "y": 100 },
+        "data": {
+          "label": "Hyper Realistic Photography",
+          "content": "Hyper-realistic aerial photograph. Shot from a drone at 400 feet altitude looking straight down. Professional maritime photography. Sharp focus, high dynamic range. Natural ocean lighting with overcast stormy sky. 8K resolution quality. Photojournalistic style. National Geographic quality."
+        }
+      },
+      {
+        "id": "subject-1",
+        "type": "subject",
+        "position": { "x": 100, "y": 250 },
+        "data": {
+          "label": "Sea Tow RHIB Vessel",
+          "content": "A Sea Tow rescue RHIB (Rigid Hull Inflatable Boat), approximately 28 feet. Bright yellow fiberglass hull with black inflatable pontoon tubes along the sides. Center console with white T-top hardtop. Twin white Yamaha outboard motors on the transom. Grey SeaDek non-skid deck flooring. VHF radio antennas on the T-top. Towing bitt on stern with heavy tow line attached. SEA TOW branding visible on hull. Single captain at helm wearing yellow rain gear. The boat is creating a wake as it moves forward, positioned in the UPPER portion of the frame."
+        }
+      },
+      {
+        "id": "subject-2",
+        "type": "subject",
+        "position": { "x": 100, "y": 400 },
+        "data": {
+          "label": "Sportfish Yacht (Disabled)",
+          "content": "A large white sportfishing yacht, approximately 55 feet, Viking or Bertram style. High flybridge with tuna tower. Outriggers extended. Fighting chair visible on stern deck. Blue canvas enclosures. The yacht is being towed - a heavy tow line is attached to its bow cleats. No wake behind it (engines off, disabled). Positioned in the LOWER portion of the frame, approximately 150 feet behind the Sea Tow boat."
+        }
+      },
+      {
+        "id": "subject-3",
+        "type": "subject",
+        "position": { "x": 100, "y": 550 },
+        "data": {
+          "label": "Tow Line",
+          "content": "A heavy marine tow line/rope stretching approximately 150 feet between the two vessels. The line is taut, visible cutting across the dark ocean water. Yellow or white braided nylon rope. Connects from Sea Tow's stern towing bitt to the sportfish yacht's bow cleats."
+        }
+      },
+      {
+        "id": "environment-1",
+        "type": "environment",
+        "position": { "x": 400, "y": 100 },
+        "data": {
+          "label": "Rough Ocean Conditions",
+          "content": "Open Atlantic ocean in rough weather conditions. 6-8 foot swells with whitecaps. Deep blue-grey stormy water. Overcast sky casting even, dramatic light. Wind-blown spray. The vast expanse of ocean dominates the frame with both boats appearing relatively small. Stormy but not extreme conditions - typical rescue weather."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": { "x": 400, "y": 300 },
+        "data": {
+          "label": "Scene Composition",
+          "content": "Bird's eye aerial view looking STRAIGHT DOWN from approximately 400 feet. The yellow Sea Tow RHIB is in the upper third of the frame, moving toward the top, creating a V-wake behind it. The white sportfish yacht is in the lower third, being pulled along with the tow line visible stretching between them across the middle of the frame. The composition emphasizes the distance between vessels and the vast ocean. 16:9 widescreen aspect ratio. The scene conveys professional rescue operation in challenging conditions."
+        }
+      }
+    ],
+    "edges": [
+      { "id": "e1", "source": "style-1", "target": "action-1" },
+      { "id": "e2", "source": "subject-1", "target": "action-1" },
+      { "id": "e3", "source": "subject-2", "target": "action-1" },
+      { "id": "e4", "source": "subject-3", "target": "action-1" },
+      { "id": "e5", "source": "environment-1", "target": "action-1" }
+    ],
+    "settings": {
+      "aspectRatio": "16:9",
+      "model": "gemini-2.0-flash-exp-image-generation"
+    }
+  }
+}

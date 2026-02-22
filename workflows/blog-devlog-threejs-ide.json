@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771110539143,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
-    "name": "Hero: KingSong Pro Lineup Refresh",
+    "id": "blog-devlog-threejs-ide-1771110539143",
+    "name": "Hero: Three.js IDE",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, muted blacks and grays with selective green and orange neon accents. Split composition: LEFT shows lines of code on a dark editor with syntax highlighting in green and amber, RIGHT shows a glowing 3D wireframe geometric shape (icosahedron or torus knot) rotating in a dark viewport. A faint connection line links a code variable to the 3D object. Dramatic shadows, cyberpunk aesthetic, technical and artistic."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771110539143,
+    "updatedAt": 1771110539143
   }
 }
