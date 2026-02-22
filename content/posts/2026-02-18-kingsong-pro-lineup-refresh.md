@@ -106,4 +106,3 @@ What's your take? Are you more interested in incremental improvements to proven 
 - [EUC Forum Discussion](https://forum.electricunicycle.org/topic/40905-pro-models-of-14d16s16x18xl/)
 
 ---
-*Generated with [Claude Code](https://claude.ai/code)*
