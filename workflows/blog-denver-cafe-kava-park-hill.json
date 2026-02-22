@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "exportedAt": 1771731028176,
+  "exportedAt": 1771732104204,
   "project": {
-    "id": "blog-denver-cafe-kava-park-hill-1771731028176",
+    "id": "blog-denver-cafe-kava-park-hill-1771732104204",
     "name": "Hero: Denver's Newest Kava Spot",
     "nodes": [
       {
@@ -15,7 +15,7 @@
         "data": {
           "label": "Style",
           "name": "Noir Comic Book",
-          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, or speech bubbles."
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
         }
       },
       {
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Cozy kava bar interior on East Colfax Avenue, Denver. Wooden bar counter with shell cups, Chinese tea sets alongside kava service. Warm string lights, eclectic mix of people in conversation. Urban Denver vibe \u2014 brick walls, vintage decor, diverse crowd. Tea and kava culture blending, community hangout atmosphere. Mountains visible through window at dusk."
+          "content": "Cozy kava bar interior on East Colfax Avenue, Denver. Wooden bar counter with shell cups, Chinese tea sets alongside kava service. Warm string lights, eclectic mix of people in conversation. Urban Denver vibe \u2014 brick walls, vintage decor, diverse crowd. Tea and kava culture blending, community hangout atmosphere. Mountains visible through window at dusk. No fedoras, contemporary casual clothing."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771731028176,
-    "updatedAt": 1771731028176
+    "createdAt": 1771732104204,
+    "updatedAt": 1771732104204
   }
 }
