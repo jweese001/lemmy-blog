@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "exportedAt": 1771730038673,
+  "exportedAt": 1771730128277,
   "project": {
-    "id": "blog-kingsong-pro-lineup-1771730038673",
+    "id": "blog-kingsong-pro-lineup-1771730128277",
     "name": "Hero: KingSong Pro Lineup Refresh",
     "nodes": [
       {
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Noir comic book style, muted blacks and grays with selective color pops of electric blue and amber. A sleek electric unicycle (EUC) in the foreground, modern industrial design with subtle LED glow strips. Urban nightscape backdrop - wet city streets, neon reflections on pavement, distant city lights. The wheel is the hero - emphasize its form, the tire tread, the clean lines. No rider visible. Atmospheric, moody, premium product shot feeling."
+          "content": "Noir comic book style, heavy black ink lines, high contrast shading. An electric unicycle wheel in dramatic three-quarter view, thick bold outlines, cel-shaded shadows. Urban alley backdrop with brick walls and fire escapes, wet pavement reflecting light. Muted palette with pops of electric blue from LED indicators on the wheel. Graphic novel panel composition, no rider visible. Gritty, stylized, hand-drawn comic book feel."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771730038673,
-    "updatedAt": 1771730038673
+    "createdAt": 1771730128277,
+    "updatedAt": 1771730128277
   }
 }
