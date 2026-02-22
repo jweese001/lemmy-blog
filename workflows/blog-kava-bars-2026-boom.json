@@ -1,32 +1,21 @@
 {
   "version": "1.0",
+  "exportedAt": 1771730762357,
   "project": {
-    "id": "blog-kava-bars-2026-boom-1770340118989",
-    "name": "Hero: Kava Bars 2026 Boom",
+    "id": "blog-kava-bars-2026-boom-1771730762357",
+    "name": "Hero: Kava Bar Boom 2026",
     "nodes": [
       {
         "id": "style-1",
         "type": "style",
         "position": {
           "x": 50,
-          "y": 50
+          "y": 100
         },
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Chill",
-          "description": "Dark, moody atmosphere with warm amber and earth tones. Cozy underground bar aesthetic, soft lighting, intimate social spaces. Pacific island meets urban lounge. Warm shadows, relaxed energy, community gathering vibes."
-        }
-      },
-      {
-        "id": "setting-1",
-        "type": "setting",
-        "position": {
-          "x": 50,
-          "y": 200
-        },
-        "data": {
-          "label": "Setting",
-          "description": "Intimate kava bar interior with low lighting, wooden bowls, tropical plants, comfortable seating areas"
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, or speech bubbles."
         }
       },
       {
@@ -34,23 +23,11 @@
         "type": "action",
         "position": {
           "x": 50,
-          "y": 350
+          "y": 300
         },
         "data": {
           "label": "Action",
-          "content": "Cozy kava bar interior, warm lighting, people sharing shells, relaxed vibe"
-        }
-      },
-      {
-        "id": "negative-1",
-        "type": "negative",
-        "position": {
-          "x": 350,
-          "y": 50
-        },
-        "data": {
-          "label": "Negative",
-          "content": "alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, loud, text, watermarks"
+          "content": "Interior of a cozy kava bar at night. Wooden bar counter with shell cups, ambient string lights, tropical plants, patrons relaxed in conversation. Warm earthy tones with pops of teal and amber. People in casual attire enjoying kava together. Community gathering vibe, not a nightclub."
         }
       },
       {
@@ -58,7 +35,7 @@
         "type": "parameters",
         "position": {
           "x": 350,
-          "y": 200
+          "y": 100
         },
         "data": {
           "label": "Parameters",
@@ -72,7 +49,7 @@
         "type": "output",
         "position": {
           "x": 350,
-          "y": 350
+          "y": 300
         },
         "data": {
           "label": "Output",
@@ -88,18 +65,8 @@
         "target": "output-1"
       },
       {
-        "id": "e-setting-output",
-        "source": "setting-1",
-        "target": "output-1"
-      },
-      {
         "id": "e-action-output",
         "source": "action-1",
-        "target": "output-1"
-      },
-      {
-        "id": "e-negative-output",
-        "source": "negative-1",
         "target": "output-1"
       },
       {
@@ -109,8 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1770340118989,
-    "updatedAt": 1770340118989
-  },
-  "exportedAt": 1770340118989
+    "createdAt": 1771730762357,
+    "updatedAt": 1771730762357
+  }
 }
