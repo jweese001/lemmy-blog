@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": 1771974108293,
+  "project": {
+    "id": "blog-demon-tides-platforming-royalty-1771974108293",
+    "name": "Hero: Demon Tides is Giving Super Mario Odyssey a Run for Its Crown",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "Vibrant cel-shaded ocean scene with colorful islands in the distance, dramatic demon-shaped silhouette mid-leap above teal waters, bat wings extended, tropical sunset with neon pink and orange gradients, stylized game art aesthetic with bold outlines"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1771974108293,
+    "updatedAt": 1771974108293
+  }
+}
