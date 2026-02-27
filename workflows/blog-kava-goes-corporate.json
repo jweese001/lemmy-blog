@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "exportedAt": 1772233332627,
+  "project": {
+    "id": "blog-kava-goes-corporate-1772233332627",
+    "name": "Hero: Kava Goes Corporate",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "A traditional carved kava shell sitting on a sleek franchise counter with corporate branding elements, fluorescent lighting mixing with warm traditional tiki aesthetics, split between authentic Pacific Island decor and modern strip mall environment, glass storefront at dusk, neon open sign"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1772233332627,
+    "updatedAt": 1772233332627
+  }
+}
