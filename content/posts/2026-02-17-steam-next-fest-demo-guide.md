@@ -52,3 +52,5 @@ What are you planning to check out? Drop your most-anticipated demos below—or 
 ---
 
 *Sources: [Gaming Bible](https://www.gamingbible.com/news/platform/steam/steam-next-fest-february-2026-775911-20260211), [GameGrin](https://www.gamegrin.com/news/top-40-demos-launching-that-you-can-check-out-for-free-16th22nd-of-february-2026), [Tarsier Studios](https://tarsier.se/games/reanimal/), [IXBT Games](https://ixbt.games/en/news/2026/02/15/reanimal-stala-krupneisei-premeroi-v-istorii-tarsier-studios.html)*
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

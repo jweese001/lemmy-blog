@@ -74,3 +74,5 @@ Hytale nearly died. Now it's a testbed for collaborative game development. That'
 - [Hytale Mod Jam Winners](https://hytaletop100.com/blog/hytale-pre-release-patch-notes-goblin-flamethrower-fire-spread-15-new-cosmetics-and-mod-jam-winners-revealed)
 - [Hytale February 2026 Roadmap](https://hytaletop100.com/blog/hytale-february-2026-roadmap-20-features-confirmed-including-flamethrowers-taming-system-and-functional-boats)
 - [CurseForge Hytale Mods](https://www.curseforge.com/hytale)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

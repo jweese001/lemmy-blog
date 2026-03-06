@@ -1,7 +1,8 @@
 {
   "version": "1.0",
+  "exportedAt": 1772815486369,
   "project": {
-    "id": "blog-v12s-smart-commuter-1772492542504",
+    "id": "blog-v12s-smart-commuter-1772815486369",
     "name": "Hero: The Inmotion V12S: When Your Commuter Wheel Gets a Touchscreen",
     "nodes": [
       {
@@ -9,24 +10,12 @@
         "type": "style",
         "position": {
           "x": 50,
-          "y": 50
+          "y": 100
         },
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Urban",
-          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Moody urban atmosphere with rain-slicked streets, neon reflections, dusk or night lighting. Muted palette with selective color pops (electric blue, amber). Stylized, not photorealistic. No text, watermarks, or white borders. Edge-to-edge composition."
-        }
-      },
-      {
-        "id": "setting-1",
-        "type": "setting",
-        "position": {
-          "x": 50,
-          "y": 200
-        },
-        "data": {
-          "label": "Setting",
-          "description": "Urban street scene at dusk, rain-slicked asphalt with neon reflections, city backdrop"
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
         }
       },
       {
@@ -34,23 +23,11 @@
         "type": "action",
         "position": {
           "x": 50,
-          "y": 350
+          "y": 300
         },
         "data": {
           "label": "Action",
-          "content": "Sleek electric unicycle with glowing touchscreen display, parked against rain-slicked city street at night, neon signs reflecting on wet pavement, modern urban commuter aesthetic, moody atmosphere"
-        }
-      },
-      {
-        "id": "negative-1",
-        "type": "negative",
-        "position": {
-          "x": 350,
-          "y": 50
-        },
-        "data": {
-          "label": "Negative",
-          "content": "photorealistic, photograph, bright daylight, sunny, text, watermarks, blurry, low quality, cluttered, amateur"
+          "content": "Noir comic book style, muted blacks and grays with selective cyan and amber neon accents. Urban city street at dusk, wet pavement reflecting neon signs. In the middle distance, a silhouetted figure rides past on an electric unicycle - far enough that the wheel model is indistinct, just a person balanced on a single wheel in motion. City commuter energy, rainy evening atmosphere. Storefronts and street lights create depth. Focus on the urban environment and mood rather than the hardware."
         }
       },
       {
@@ -58,7 +35,7 @@
         "type": "parameters",
         "position": {
           "x": 350,
-          "y": 200
+          "y": 100
         },
         "data": {
           "label": "Parameters",
@@ -72,7 +49,7 @@
         "type": "output",
         "position": {
           "x": 350,
-          "y": 350
+          "y": 300
         },
         "data": {
           "label": "Output",
@@ -88,18 +65,8 @@
         "target": "output-1"
       },
       {
-        "id": "e-setting-output",
-        "source": "setting-1",
-        "target": "output-1"
-      },
-      {
         "id": "e-action-output",
         "source": "action-1",
-        "target": "output-1"
-      },
-      {
-        "id": "e-negative-output",
-        "source": "negative-1",
         "target": "output-1"
       },
       {
@@ -109,8 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1772492542504,
-    "updatedAt": 1772492542504
-  },
-  "exportedAt": 1772492542504
+    "createdAt": 1772815486369,
+    "updatedAt": 1772815486369
+  }
 }

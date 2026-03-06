@@ -51,3 +51,5 @@ The old bluegrassers might still grumble that it's not *real* bluegrass. The pun
 - [Strung Like a Horse – Purple Fiddle](https://purplefiddle.com/bands/strung-like-a-horse/)
 
 ---
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

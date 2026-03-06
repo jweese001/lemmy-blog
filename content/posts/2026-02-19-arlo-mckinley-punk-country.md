@@ -63,3 +63,5 @@ That kid picking albums by their artwork in Cincinnati? He's still there. He jus
 - [Brooklyn Vegan - Arlo McKinley Discusses His 5 Favorite Punk & Metal Albums](https://www.brooklynvegan.com/country-singer-arlo-mckinley-discusses-his-5-favorite-punk-metal-albums/)
 
 ---
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

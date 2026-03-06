@@ -58,3 +58,5 @@ Not a bad start for a state that's still getting acquainted with what a kava bar
 - [Kava Kasa - Grand Rapids](https://www.kavakasagr.com/)
 - [Sen Kava Detroit](https://senkavadetroit.wixsite.com/sen-kava)
 - [Fortune Business Insights - Kava Root Extract Market](https://www.fortunebusinessinsights.com/kava-root-extract-market-103694)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

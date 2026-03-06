@@ -62,3 +62,5 @@ February's looking good. Wishlist the ones that grab you—these smaller studios
 ---
 
 *Sources: [Green Man Gaming](https://www.greenmangaming.com/blog/indie-video-games-round-up-february-2026/), [GamesRadar](https://www.gamesradar.com/upcoming-indie-games/), [Console Creatures](https://www.consolecreatures.com/10-indie-games-to-keep-an-eye-on-in-2026/)*
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

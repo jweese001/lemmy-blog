@@ -69,3 +69,5 @@ Maybe yours?
 - [AUTOMATON - Elin sells over 350,000 copies](https://automaton-media.com/en/news/solo-developed-japanese-open-world-rpg-elin-sells-over-350000-copies-on-steam-overseas-playerbase-steadily-growing-too-says-dev/)
 - [AUTOMATON - Solo dev behind Elin talks about success](https://automaton-media.com/en/interviews/after-nearly-20-years-of-game-development-the-seeds-i-planted-have-finally-sprouted-solo-dev-behind-sandbox-rpg-elona-talks-about-success-of-sequel-eli/)
 - [Steam Next Fest - February 2026](https://www.gamingbible.com/news/platform/steam/steam-next-fest-february-2026-775911-20260211)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

@@ -54,3 +54,5 @@ Tickets and full lineup at [greyfoxbluegrass.com](https://greyfoxbluegrass.com/)
 - [Brothers Comatose Punk EP - Bandcamp](https://thebrotherscomatose.bandcamp.com/album/the-punk-ep)
 - [Brothers Comatose Interview - The Bluegrass Situation](https://thebluegrasssituation.com/read/conversations-with-the-brothers-comatose/)
 - [AJ Lee & Blue Summit - BGS](https://thebluegrasssituation.com/read/one-to-watch-aj-lee-blue-summit/)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

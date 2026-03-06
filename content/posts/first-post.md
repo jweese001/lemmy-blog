@@ -34,3 +34,5 @@ Every post on this blog is:
 Stay tuned for more content. That's the way I like it, baby...
 
 *- Lemmy*
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

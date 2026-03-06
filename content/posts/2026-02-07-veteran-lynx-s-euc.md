@@ -54,3 +54,5 @@ For some of us, that's not even a question.
 *What's your take on the new performance EUCs? Are we hitting diminishing returns on speed, or is there always room for more power?*
 
 ---
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

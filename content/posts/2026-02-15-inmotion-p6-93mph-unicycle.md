@@ -90,3 +90,5 @@ You know they are.
 - [Inmotion CES 2026 Press Release](https://www.prnewswire.com/news-releases/inmotion-showcases-breakthrough-innovations-in-high-performance-personal-mobility-at-ces-2026-302657810.html)
 - [Electric Unicycle Forum - P6 Discussion](https://forum.electricunicycle.org/topic/40974-inmotion-p6/)
 - [Inmotion P6 Safety & Performance Blog](https://inmotionworld.com/blogs/blog/inmotion-p6-extreme-performance-engineered-with-safety)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

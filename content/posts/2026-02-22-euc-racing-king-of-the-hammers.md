@@ -50,3 +50,5 @@ If you're riding a wheel and haven't thought about racing it, maybe it's time to
 *Sources:*
 - [Amped Electric Games - ULTRA1 at King of the Motos](https://ampedelectricgames.com/amped-electric-games-brings-sanctioned-ultra1-electric-unicycle-racing-back-to-king-of-the-motos/)
 - [USA EUC - 2026 Season Schedule](https://usaeuc.com/seasons/2026)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
