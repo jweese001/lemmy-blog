@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-stellar-tactics-decade-1773266518505",
+    "name": "Hero: A Decade in the Making: Stellar Tactics",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "w33s3 Dark + Retro Comic",
+          "description": "Noir comic book illustration style with retro gaming influence. Heavy black ink lines, high contrast cel-shading. Hand-drawn graphic novel aesthetic with bold outlines. Dark moody atmosphere with neon pink and cyan color pops against deep blacks. CRT scan-line texture overlay, pixel art influence in details. Stylized illustration, NOT photorealistic. No photographs. No text, watermarks, or white borders. Edge-to-edge composition."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Dark room with retro gaming setup, CRT monitors glowing, arcade machines in background, warm ambient lighting from screens"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "Solitary figure at a desk lit by multiple monitors showing star maps and tactical grids, Florida home office at night, galaxy visualization glowing on screens, ship schematics scattered, coffee cup, years of dedication visible in the workspace"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "photorealistic, photograph, photo, realistic, blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1773266518505,
+    "updatedAt": 1773266518505
+  },
+  "exportedAt": 1773266518505
+}
