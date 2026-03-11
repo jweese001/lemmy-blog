@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "project": {
-    "id": "blog-rifleman-string-band-1772751706515",
-    "name": "Hero: When Bluegrass Storms Punk Rock Bowling",
+    "id": "blog-rifleman-string-band-1773186511945",
+    "name": "Hero: Rifleman String Band: Punk Bluegrass",
     "nodes": [
       {
         "id": "style-1",
@@ -68,7 +68,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Festival stage at Punk Rock Bowling in Las Vegas, acoustic trio with banjo, upright bass, and guitar performing to a crowd. Vegas desert heat, chain-link fence backdrop, early afternoon sun casting harsh shadows. Band members in working-class clothes playing with punk energy. Noir comic illustration style with high contrast blacks and neon accent pops."
+          "content": "Four-piece Appalachian punk bluegrass band performing on small rustic wooden stage, banjo player and fiddler in front, acoustic guitarist and upright bass player behind, intimate folk venue with string lights, enthusiastic crowd with raised fists, Americana folk-punk energy"
         },
         "measured": {
           "width": 220,
@@ -265,8 +265,8 @@
       }
     ],
     "groups": [],
-    "createdAt": 1772751706515,
-    "updatedAt": 1772751706515
+    "createdAt": 1773186511945,
+    "updatedAt": 1773186511945
   },
-  "exportedAt": 1772751706515
+  "exportedAt": 1773186511945
 }

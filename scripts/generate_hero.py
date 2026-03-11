@@ -36,7 +36,8 @@ IMAGE_DIR = PROJECT_DIR / "static" / "images"
 # w33s3 style - consistent dark aesthetic
 W33S3_STYLE = {
     "name": "Noir Comic Book",
-    "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, or speech bubbles."
+    "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame.",
+    "negative": "Never include Lemmy Kilmister, Motörhead imagery, metal bassists in leather jackets, or self-portraits of rock legends. No generic punk rockers with mohawks unless specifically requested. Focus on the actual subject matter described in the scene."
 }
 
 # Gemini API config - Use Gemini 3 Pro for 16:9 aspect ratio support
@@ -215,6 +216,15 @@ def create_workflow(title: str, scene: str, slug: str, aspect_ratio: str = "16:9
                     }
                 },
                 {
+                    "id": "negative-1",
+                    "type": "negative",
+                    "position": {"x": 50, "y": 500},
+                    "data": {
+                        "label": "Avoid",
+                        "content": W33S3_STYLE.get("negative", "")
+                    }
+                },
+                {
                     "id": "output-1",
                     "type": "output",
                     "position": {"x": 350, "y": 300},
@@ -227,6 +237,7 @@ def create_workflow(title: str, scene: str, slug: str, aspect_ratio: str = "16:9
             ],
             "edges": [
                 {"id": "e-style-output", "source": "style-1", "target": "output-1"},
+                {"id": "e-negative-output", "source": "negative-1", "target": "output-1"},
                 {"id": "e-action-output", "source": "action-1", "target": "output-1"},
                 {"id": "e-params-output", "source": "parameters-1", "target": "output-1", "targetHandle": "config"}
             ],
