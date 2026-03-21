@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "template": true,
-  "description": "Template for kava bar culture, social scenes, relaxation vibes",
+  "description": "Template for kava bar culture, social scenes, relaxation vibes - ILLUSTRATION STYLE",
   "project": {
     "id": "template-kava",
     "name": "Template: Kava Bars",
@@ -12,8 +12,8 @@
         "position": {"x": 50, "y": 50},
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Chill",
-          "description": "Dark, moody atmosphere with warm amber and earth tones. Cozy underground bar aesthetic, soft lighting, intimate social spaces. Pacific island meets urban lounge. Warm shadows, relaxed energy, community gathering vibes."
+          "name": "w33s3 Dark + Chill Illustration",
+          "description": "Warm illustration style with hand-drawn quality. Soft ink lines, gentle shading, cozy graphic novel aesthetic. Warm amber and earth tone palette with deep shadows. Pacific island meets urban lounge atmosphere. Stylized illustration, NOT photorealistic. No photographs. Painterly warmth with visible artistic strokes. No text, watermarks, or white borders. Edge-to-edge composition."
         }
       },
       {
@@ -40,7 +40,7 @@
         "position": {"x": 350, "y": 50},
         "data": {
           "label": "Negative",
-          "content": "alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, loud, text, watermarks"
+          "content": "photorealistic, photograph, photo, realistic, alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, loud, text, watermarks"
         }
       },
       {

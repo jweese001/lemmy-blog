@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771731302824,
+  "exportedAt": 1773583347771,
   "project": {
-    "id": "blog-austin-kava-crawl-1771731302824",
-    "name": "Hero: Austin Kava Crawl",
+    "id": "blog-devlog-flowboard-mvp-prep-1773583347771",
+    "name": "Hero: The Last 10% Is 90% of the Work",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Downtown Austin kava bar scene. Sixth Street nightlife energy meets laid-back Pacific island vibes. Live music venue interior with shell bowls on wooden bar. Texas heat outside, cool relaxed atmosphere inside. Diverse crowd of musicians, tech workers, and locals sharing kava. Neon signs, brick walls, Austin weird culture."
+          "content": "Noir comic book style, muted blacks and grays with selective purple and teal color pops. A developer at a workbench surrounded by tangled wires and circuit boards, methodically untangling and organizing them. One section is clean and orderly with glowing connections, the other still a mess of loose ends. Late night atmosphere with dramatic shadows."
         }
       },
       {
@@ -42,6 +42,18 @@
           "model": "gemini-pro",
           "aspectRatio": "16:9",
           "resolution": "2K"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 50,
+          "y": 500
+        },
+        "data": {
+          "label": "Avoid",
+          "content": "Never include Lemmy Kilmister, Mot\u00f6rhead imagery, metal bassists in leather jackets, or self-portraits of rock legends. No generic punk rockers with mohawks unless specifically requested. Focus on the actual subject matter described in the scene."
         }
       },
       {
@@ -65,6 +77,11 @@
         "target": "output-1"
       },
       {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
         "id": "e-action-output",
         "source": "action-1",
         "target": "output-1"
@@ -76,7 +93,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771731302824,
-    "updatedAt": 1771731302824
+    "createdAt": 1773583347771,
+    "updatedAt": 1773583347771
   }
 }

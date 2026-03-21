@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771731302824,
+  "exportedAt": 1772982094791,
   "project": {
-    "id": "blog-austin-kava-crawl-1771731302824",
-    "name": "Hero: Austin Kava Crawl",
+    "id": "blog-devlog-flowboard-auth-persistence-1772982094791",
+    "name": "Hero: FlowBoard: When Auth State Fights React State",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Downtown Austin kava bar scene. Sixth Street nightlife energy meets laid-back Pacific island vibes. Live music venue interior with shell bowls on wooden bar. Texas heat outside, cool relaxed atmosphere inside. Diverse crowd of musicians, tech workers, and locals sharing kava. Neon signs, brick walls, Austin weird culture."
+          "content": "Noir comic book style, muted blacks and grays with selective color pops. A developer hunched over a laptop in a dim room with multiple terminal windows glowing. Code reflected in glasses. A password reset email notification floating in the air. React component tree tangled with auth tokens like twisted vines. Supabase logo partially visible. The vibe is frustrated but determined problem-solving at 2am."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771731302824,
-    "updatedAt": 1771731302824
+    "createdAt": 1772982094791,
+    "updatedAt": 1772982094791
   }
 }

@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771731302824,
+  "exportedAt": 1772377309812,
   "project": {
-    "id": "blog-austin-kava-crawl-1771731302824",
-    "name": "Hero: Austin Kava Crawl",
+    "id": "blog-devlog-saas-layer-ready-1772377309812",
+    "name": "Hero: The SaaS Layer is Ready",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Downtown Austin kava bar scene. Sixth Street nightlife energy meets laid-back Pacific island vibes. Live music venue interior with shell bowls on wooden bar. Texas heat outside, cool relaxed atmosphere inside. Diverse crowd of musicians, tech workers, and locals sharing kava. Neon signs, brick walls, Austin weird culture."
+          "content": "Noir comic book style, muted blacks and grays with selective amber and teal color pops. Developer at a desk with floating code fragments and connection lines reaching toward cloud icons that remain tantalizingly out of reach. The code blocks glow softly while the cloud services are rendered as distant neon-lit buildings in a foggy cityscape beyond the window. Strong contrast between the warm light of the workspace and the cool, unreachable infrastructure."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771731302824,
-    "updatedAt": 1771731302824
+    "createdAt": 1772377309812,
+    "updatedAt": 1772377309812
   }
 }

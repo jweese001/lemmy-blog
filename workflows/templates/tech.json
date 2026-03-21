@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "template": true,
-  "description": "Template for tech/AI/tools posts - abstract, digital, neural aesthetics",
+  "description": "Template for tech/AI/tools posts - abstract digital with comic book illustration style",
   "project": {
     "id": "template-tech",
     "name": "Template: Tech & AI",
@@ -12,8 +12,8 @@
         "position": {"x": 50, "y": 50},
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Digital",
-          "description": "Dark, moody atmosphere with high contrast. Abstract digital aesthetic, flowing data visualization, neural network patterns. Glowing nodes and connections against void black. Circuit-like patterns, creative energy visualization. Futuristic but not cheesy."
+          "name": "w33s3 Dark + Digital Comic",
+          "description": "Noir comic book illustration style with digital/tech influence. Heavy black ink lines, high contrast cel-shading. Hand-drawn graphic novel aesthetic with bold outlines. Abstract digital patterns rendered as flowing ink illustrations. Neural network nodes as hand-drawn glowing orbs. Circuit-like patterns with artistic, organic quality. Dark void backgrounds with electric blue and amber color pops. Stylized illustration, NOT photorealistic. No photographs. No text, watermarks, or white borders. Edge-to-edge composition."
         }
       },
       {
@@ -31,7 +31,7 @@
         "position": {"x": 350, "y": 50},
         "data": {
           "label": "Negative",
-          "content": "robots, humanoid AI, cheesy sci-fi, matrix green text, stock photo, corporate, clipart, literal computer hardware, keyboards"
+          "content": "photorealistic, photograph, photo, realistic, robots, humanoid AI, cheesy sci-fi, matrix green text, stock photo, corporate, clipart, literal computer hardware, keyboards, text, watermarks"
         }
       },
       {

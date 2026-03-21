@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "exportedAt": 1771731302824,
+  "exportedAt": 1771772484155,
   "project": {
-    "id": "blog-austin-kava-crawl-1771731302824",
-    "name": "Hero: Austin Kava Crawl",
+    "id": "blog-devlog-setting-reference-pipeline-1771772484155",
+    "name": "Hero: Setting Reference Pipeline",
     "nodes": [
       {
         "id": "style-1",
@@ -27,7 +27,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Downtown Austin kava bar scene. Sixth Street nightlife energy meets laid-back Pacific island vibes. Live music venue interior with shell bowls on wooden bar. Texas heat outside, cool relaxed atmosphere inside. Diverse crowd of musicians, tech workers, and locals sharing kava. Neon signs, brick walls, Austin weird culture."
+          "content": "Empty conference room establishing shot. Moody lighting through a doorway, long table with chairs, a cloth draped over one chair. No people. Dramatic shadows on the floor. Architecture and spatial elements emphasized."
         }
       },
       {
@@ -76,7 +76,7 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1771731302824,
-    "updatedAt": 1771731302824
+    "createdAt": 1771772484155,
+    "updatedAt": 1771772484155
   }
 }

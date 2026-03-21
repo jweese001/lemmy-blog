@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "template": true,
-  "description": "Template for indie game posts - retro gaming aesthetic with neon glow",
+  "description": "Template for indie game posts - retro gaming aesthetic with comic book style",
   "project": {
     "id": "template-indie-games",
     "name": "Template: Indie Games",
@@ -12,8 +12,8 @@
         "position": {"x": 50, "y": 50},
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Retro",
-          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon pink and cyan accents against deep blacks. Retro gaming aesthetic, CRT glow effects, pixel art influence. Professional photography feel, dramatic shadows."
+          "name": "w33s3 Dark + Retro Comic",
+          "description": "Noir comic book illustration style with retro gaming influence. Heavy black ink lines, high contrast cel-shading. Hand-drawn graphic novel aesthetic with bold outlines. Dark moody atmosphere with neon pink and cyan color pops against deep blacks. CRT scan-line texture overlay, pixel art influence in details. Stylized illustration, NOT photorealistic. No photographs. No text, watermarks, or white borders. Edge-to-edge composition."
         }
       },
       {
@@ -40,7 +40,7 @@
         "position": {"x": 350, "y": 50},
         "data": {
           "label": "Negative",
-          "content": "blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+          "content": "photorealistic, photograph, photo, realistic, blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
         }
       },
       {
