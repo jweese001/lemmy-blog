@@ -69,9 +69,11 @@ hugo server --bind 0.0.0.0 -p 1313
 ├── scripts/
 │   ├── generate_hero.py   # Generate hero images via Gemini
 │   └── create_post.py     # Full post creation pipeline
+├── workflows/templates/   # FlowBoard templates per topic
 ├── CLAUDE.md              # This file
+├── ILLUSTRATION-STYLE.md  # **CRITICAL: Read this for art style**
 ├── PLANNING.md            # Detailed project planning
-└── STYLE-GUIDE.md         # Design system documentation
+└── STYLE-GUIDE.md         # Web design system documentation
 ```
 
 ## Creating Posts
@@ -158,14 +160,41 @@ export GEMINI_API_KEY="your-api-key-here"
 
 FlowBoard UI stores API keys in browser localStorage (Settings panel).
 
-### w33s3 Style (Applied Automatically)
+## Illustration Style (CRITICAL)
 
-All hero images use this consistent style:
-- Dark, moody atmosphere with high contrast
-- Cinematic composition with neon accents
-- Professional photography feel
-- Deep blacks with dramatic shadows
-- No text or watermarks
+**Read `ILLUSTRATION-STYLE.md` for the authoritative style guide.**
+
+### Quick Summary
+
+All hero images use **comic book illustration** techniques:
+
+- **Heavy ink linework** - Bold black outlines, hand-drawn feel
+- **Chiaroscuro** - High contrast light/shadow, deep blacks, stark highlights
+- **Cel-shaded shadows** - Graphic shapes, NOT soft gradients
+- **Selective color** - Mostly muted palette with occasional saturated pops
+- **Edge-to-edge composition** - No white borders, fills the frame
+
+### What to AVOID
+
+- Photorealism / "professional photography feel"
+- Soft, airbrushed gradients
+- Fedoras, 1940s detective imagery, film noir clichés
+- Generic AI aesthetic (over-rendered, plastic-looking)
+- Stock photo compositions
+
+### Artist Influences
+
+Pick artists that fit the subject. Note which artist inspired the piece.
+
+| Topic | Primary Influence | Palette Notes |
+|-------|-------------------|---------------|
+| Indie Games | Kirby, Moebius | Neon pops (cyan, magenta) against dark |
+| E-Bikes | Moebius, Geof Darrow | Urban grays with accent color |
+| Punk Music | Los Bros Hernandez, Paul Pope | High contrast B&W with earth tone pops |
+| Kava Bars | Dave McKean, Moebius | Warm amber/ochre, relaxed palette |
+| Tech | Kirby, Moebius | Cool blues, digital accents |
+
+**See `ILLUSTRATION-STYLE.md` for full artist reference table.**
 
 ### Detailed FlowBoard Guide
 
@@ -294,6 +323,7 @@ git add -A && git commit -m "Add post: Title" && git push
 
 ## Related Files
 
+- **Illustration Style**: `~/lemmy-blog/ILLUSTRATION-STYLE.md` ← **CRITICAL: Read for art style**
 - **FlowBoard Guide**: `~/lemmy-blog/FLOWBOARD-GUIDE.md` ← **READ THIS for image generation**
 - **Planning Doc**: `~/lemmy-blog/PLANNING.md`
 - **Style Guide**: `~/lemmy-blog/STYLE-GUIDE.md`
@@ -340,7 +370,7 @@ Ask: What does THIS article actually discuss?
 
 ### Style Stays Consistent
 
-Keep the w33s3 style (dark, moody, cinematic, neon accents). Only change the SUBJECT MATTER to match article content.
+Keep the comic book illustration style (heavy ink, chiaroscuro, cel-shaded). Only change the SUBJECT MATTER to match article content.
 
 ## Content Guidelines
 

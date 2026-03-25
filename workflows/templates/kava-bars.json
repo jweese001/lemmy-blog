@@ -12,8 +12,8 @@
         "position": {"x": 50, "y": 50},
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Chill",
-          "description": "Dark, moody atmosphere with warm amber and earth tones. Cozy underground bar aesthetic, soft lighting, intimate social spaces. Pacific island meets urban lounge. Warm shadows, relaxed energy, community gathering vibes."
+          "name": "Comic Ink + Warm Gathering",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and warm amber highlights. Cel-shaded shadows, graphic shapes. Warm ochre and earth tones with soft glow accents. Hand-drawn comic book aesthetic with relaxed, communal energy. Influenced by Dave McKean and Moebius. NOT photorealistic. Edge-to-edge composition."
         }
       },
       {
@@ -40,7 +40,7 @@
         "position": {"x": 350, "y": 50},
         "data": {
           "label": "Negative",
-          "content": "alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, loud, text, watermarks"
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clichés, alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, text, watermarks, stock photo, over-rendered, plastic-looking"
         }
       },
       {

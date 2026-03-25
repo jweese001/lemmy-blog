@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "template": true,
-  "description": "Template for indie game posts - retro gaming aesthetic with neon glow",
+  "description": "Template for indie game posts - comic book style with retro gaming elements",
   "project": {
     "id": "template-indie-games",
     "name": "Template: Indie Games",
@@ -12,8 +12,8 @@
         "position": {"x": 50, "y": 50},
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Retro",
-          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon pink and cyan accents against deep blacks. Retro gaming aesthetic, CRT glow effects, pixel art influence. Professional photography feel, dramatic shadows."
+          "name": "Comic Ink + Retro Gaming",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Muted palette with selective neon color pops (cyan, magenta). Hand-drawn comic book aesthetic with retro CRT glow influence. Influenced by Kirby and Moebius. NOT photorealistic. Edge-to-edge composition."
         }
       },
       {
@@ -31,7 +31,7 @@
         "position": {"x": 50, "y": 350},
         "data": {
           "label": "Action",
-          "content": "[REPLACE: Describe the specific scene - e.g., 'Colorful pixel art characters leap from glowing screen, sense of discovery and wonder']"
+          "content": "[REPLACE: Describe the specific scene from the article]"
         }
       },
       {
@@ -40,7 +40,7 @@
         "position": {"x": 350, "y": 50},
         "data": {
           "label": "Negative",
-          "content": "blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clichés, blurry, text, watermark, stock photo, over-rendered, plastic-looking"
         }
       },
       {
