@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "project": {
-    "id": "blog-tangy-td-tears-triumph-1774389758455",
-    "name": "Hero: Four Years, Zero Experience, $250K",
+    "id": "blog-tangy-td-tears-triumph-1774531609699",
+    "name": "Hero: Four Years, Zero Experience, 50K: The Tangy TD Story",
     "nodes": [
       {
         "id": "style-1",
@@ -13,8 +13,8 @@
         },
         "data": {
           "label": "Style",
-          "name": "w33s3 Dark + Retro",
-          "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon pink and cyan accents against deep blacks. Retro gaming aesthetic, CRT glow effects, pixel art influence. Professional photography feel, dramatic shadows."
+          "name": "Comic Ink + Retro Gaming",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Muted palette with selective neon color pops (cyan, magenta). Hand-drawn comic book aesthetic with retro CRT glow influence. Influenced by Kirby and Moebius. NOT photorealistic. Edge-to-edge composition."
         }
       },
       {
@@ -38,7 +38,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Solo game developer at cluttered desk with multiple monitors showing a colorful tower defense game, dim room lit by screen glow, coffee cups and energy drink cans scattered around, Steam sales chart visible on second monitor showing upward spike, emotional moment of success, late night indie dev aesthetic"
+          "content": "Solo indie developer at desk, illuminated by glowing monitor showing tower defense game UI with witch character and towers. Late night coding session, scattered coffee cups and notes. Moment of emotional triumph - hands raised, tears of joy. Small home office, warm screen glow against darkness."
         }
       },
       {
@@ -50,7 +50,7 @@
         },
         "data": {
           "label": "Negative",
-          "content": "blurry, low quality, text, watermark, signature, logo, oversaturated, amateur, stock photo, realistic human faces"
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, blurry, text, watermark, stock photo, over-rendered, plastic-looking"
         }
       },
       {
@@ -109,8 +109,8 @@
         "targetHandle": "config"
       }
     ],
-    "createdAt": 1774389758455,
-    "updatedAt": 1774389758455
+    "createdAt": 1774531609699,
+    "updatedAt": 1774531609699
   },
-  "exportedAt": 1774389758455
+  "exportedAt": 1774531609699
 }
