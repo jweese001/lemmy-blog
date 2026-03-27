@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-let-it-ride-5-1774648916702",
+    "name": "Hero: Let It Ride 5: Where the Desert Meets the Wheel",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "Comic Ink + Urban Motion",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Urban grays with selective accent color pop (one vibrant highlight). Hand-drawn comic book aesthetic with kinetic energy. Influenced by Moebius and Geof Darrow. NOT photorealistic. Edge-to-edge composition."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Urban streets at dusk, city architecture in background, motion blur trails, evening commute energy"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "Electric unicycle racer carving through high desert terrain at Bootleg Canyon, Nevada. Single wheel kicking up dust on rocky singletrack trail, dramatic desert mesa backdrop at golden hour, cacti and sagebrush lining the trail edges. Motion blur emphasizes speed, rider in protective gear leaning into a technical turn. Rugged Mojave landscape with distant mountains."
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, blurry, text, watermark, stock photo, over-rendered, plastic-looking, motorcycle gang, aggressive"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1774648916702,
+    "updatedAt": 1774648916702
+  },
+  "exportedAt": 1774648916702
+}
