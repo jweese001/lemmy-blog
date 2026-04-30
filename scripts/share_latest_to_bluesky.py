@@ -111,6 +111,22 @@ def parse_post_file(path: Path, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
     )
 
 
+def resolve_target_post(
+    posts_dir: Path = POSTS_DIR,
+    *,
+    slug: str | None = None,
+    blog_root: Path = BLOG_ROOT,
+ ) -> PostMetadata:
+    if slug is None:
+        return resolve_latest_post(posts_dir, blog_root=blog_root)
+
+    for path in posts_dir.glob("*.md"):
+        post = parse_post_file(path, blog_root=blog_root)
+        if post.slug == slug:
+            return post
+
+    raise FileNotFoundError(f"No post found for slug '{slug}' in {posts_dir}")
+
 def resolve_latest_post(posts_dir: Path = POSTS_DIR, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
     candidates = [parse_post_file(path, blog_root=blog_root) for path in posts_dir.glob("*.md")]
     if not candidates:
@@ -278,46 +294,56 @@ def share_latest_post(
     credentials_path: Path = DEFAULT_CREDENTIALS_PATH,
     now: datetime | None = None,
     dry_run: bool = False,
-) -> ShareResult:
-    latest = resolve_latest_post(posts_dir, blog_root=blog_root)
-    if not latest.image_path.exists():
-        raise FileNotFoundError(f"Hero image not found for latest post: {latest.image_path}")
+    slug: str | None = None,
+    allow_stale: bool = False,
+ ) -> ShareResult:
+    target = resolve_target_post(posts_dir, slug=slug, blog_root=blog_root)
+    if not target.image_path.exists():
+        raise FileNotFoundError(f"Hero image not found for target post: {target.image_path}")
 
-    if not is_post_one_day_old(latest.date, now=now):
-        return ShareResult(
-            status="skipped",
-            message=f"Latest post {latest.slug} is not exactly one day old; skipping share.",
-            slug=latest.slug,
-            url=latest.url,
-        )
+    if not is_post_one_day_old(target.date, now=now):
+        if slug is None:
+            return ShareResult(
+                status="skipped",
+                message=f"Latest post {target.slug} is not exactly one day old; skipping share.",
+                slug=target.slug,
+                url=target.url,
+            )
+        if not allow_stale:
+            return ShareResult(
+                status="skipped",
+                message=f"Target post {target.slug} is historical; rerun with --allow-stale to override for manual testing.",
+                slug=target.slug,
+                url=target.url,
+            )
 
     shared = load_shared_slugs(ledger_path)
-    if latest.slug in shared:
+    if target.slug in shared:
         return ShareResult(
             status="skipped",
-            message=f"Latest post {latest.slug} was already shared to Bluesky.",
-            slug=latest.slug,
-            url=latest.url,
+            message=f"Target post {target.slug} was already shared to Bluesky.",
+            slug=target.slug,
+            url=target.url,
         )
 
-    text = compose_share_text(latest.title, latest.description, latest.url)
+    text = compose_share_text(target.title, target.description, target.url)
     if dry_run:
         return ShareResult(
             status="dry_run",
             message=text,
-            slug=latest.slug,
-            url=latest.url,
+            slug=target.slug,
+            url=target.url,
         )
 
     credentials = load_credentials(credentials_path)
     session = create_session(credentials)
-    response = create_bluesky_post(session["accessJwt"], session["did"], text, latest)
-    save_shared_slug(ledger_path, latest.slug)
+    response = create_bluesky_post(session["accessJwt"], session["did"], text, target)
+    save_shared_slug(ledger_path, target.slug)
     return ShareResult(
         status="posted",
-        message="Posted latest Lemmy's Mic article to Bluesky.",
-        slug=latest.slug,
-        url=latest.url,
+        message="Posted Lemmy's Mic article to Bluesky.",
+        slug=target.slug,
+        url=target.url,
         bluesky_uri=response.get("uri"),
     )
 
@@ -327,6 +353,8 @@ def main() -> None:
     parser.add_argument("--blog-root", default=str(BLOG_ROOT), help="Override blog root path")
     parser.add_argument("--ledger", default=str(DEFAULT_LEDGER_PATH), help="Path to shared-post ledger JSON")
     parser.add_argument("--credentials", default=str(DEFAULT_CREDENTIALS_PATH), help="Path to Bluesky credentials JSON")
+    parser.add_argument("--slug", help="Specific post slug to share manually")
+    parser.add_argument("--allow-stale", action="store_true", help="Allow manual sharing of a historical post slug")
     parser.add_argument("--dry-run", action="store_true", help="Print what would be posted without publishing")
     args = parser.parse_args()
 
@@ -336,6 +364,8 @@ def main() -> None:
         ledger_path=Path(args.ledger),
         credentials_path=Path(args.credentials),
         dry_run=args.dry_run,
+        slug=args.slug,
+        allow_stale=args.allow_stale,
     )
 
     payload = {

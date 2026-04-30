@@ -10,8 +10,12 @@ from scripts.share_latest_to_bluesky import (
     load_shared_slugs,
     parse_post_file,
     resolve_latest_post,
+    resolve_target_post,
     save_shared_slug,
-)
+    share_latest_post,
+    ShareResult,
+    PostMetadata,
+ )
 
 
 def _write_post(path: Path, *, title: str, date: str, image: str, description: str) -> Path:
@@ -157,3 +161,81 @@ def test_parse_post_file_resolves_existing_image_file(tmp_path: Path):
     post = parse_post_file(post_path, blog_root=tmp_path)
 
     assert post.image_path == image_path
+
+
+def test_resolve_target_post_by_slug(tmp_path: Path):
+    posts_dir = tmp_path / "content" / "posts"
+    posts_dir.mkdir(parents=True)
+    target_path = _write_post(
+        posts_dir / "2026-02-08-when-bluegrass-met-the-mosh-pit.md",
+        title="When Bluegrass Met the Mosh Pit",
+        date="2026-02-08T18:00:00-05:00",
+        image="/images/hero-when-bluegrass-met-the-mosh-pit.jpg",
+        description="desc",
+    )
+
+    post = resolve_target_post(posts_dir, slug="when-bluegrass-met-the-mosh-pit", blog_root=tmp_path)
+
+    assert post.path == target_path
+    assert post.slug == "when-bluegrass-met-the-mosh-pit"
+
+
+def test_share_latest_post_requires_override_for_stale_manual_slug(tmp_path: Path):
+    posts_dir = tmp_path / "content" / "posts"
+    images_dir = tmp_path / "static" / "images"
+    posts_dir.mkdir(parents=True)
+    images_dir.mkdir(parents=True)
+    Image.new("RGB", (64, 32), color=(10, 20, 30)).save(
+        images_dir / "hero-when-bluegrass-met-the-mosh-pit.jpg"
+    )
+    _write_post(
+        posts_dir / "2026-02-08-when-bluegrass-met-the-mosh-pit.md",
+        title="When Bluegrass Met the Mosh Pit",
+        date="2026-02-08T18:00:00-05:00",
+        image="/images/hero-when-bluegrass-met-the-mosh-pit.jpg",
+        description="A crossover worth sharing.",
+    )
+
+    result = share_latest_post(
+        blog_root=tmp_path,
+        posts_dir=posts_dir,
+        ledger_path=tmp_path / "ledger.json",
+        credentials_path=tmp_path / "credentials.json",
+        now=datetime(2026, 4, 30, 12, 0, tzinfo=timezone.utc),
+        dry_run=True,
+        slug="when-bluegrass-met-the-mosh-pit",
+    )
+
+    assert result.status == "skipped"
+    assert "override" in result.message.lower()
+
+
+def test_share_latest_post_allows_stale_manual_slug_in_dry_run(tmp_path: Path):
+    posts_dir = tmp_path / "content" / "posts"
+    images_dir = tmp_path / "static" / "images"
+    posts_dir.mkdir(parents=True)
+    images_dir.mkdir(parents=True)
+    Image.new("RGB", (64, 32), color=(10, 20, 30)).save(
+        images_dir / "hero-when-bluegrass-met-the-mosh-pit.jpg"
+    )
+    _write_post(
+        posts_dir / "2026-02-08-when-bluegrass-met-the-mosh-pit.md",
+        title="When Bluegrass Met the Mosh Pit",
+        date="2026-02-08T18:00:00-05:00",
+        image="/images/hero-when-bluegrass-met-the-mosh-pit.jpg",
+        description="A crossover worth sharing.",
+    )
+
+    result = share_latest_post(
+        blog_root=tmp_path,
+        posts_dir=posts_dir,
+        ledger_path=tmp_path / "ledger.json",
+        credentials_path=tmp_path / "credentials.json",
+        now=datetime(2026, 4, 30, 12, 0, tzinfo=timezone.utc),
+        dry_run=True,
+        slug="when-bluegrass-met-the-mosh-pit",
+        allow_stale=True,
+    )
+
+    assert result.status == "dry_run"
+    assert "When Bluegrass Met the Mosh Pit" in result.message
