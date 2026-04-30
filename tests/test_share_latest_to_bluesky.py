@@ -98,7 +98,7 @@ def test_compose_share_text_includes_title_description_and_url():
     )
 
     assert text.startswith("New on Lemmy's Mic: Cargo E-Bikes Are Quietly Winning the Commute War")
-    assert "https://jweese001.github.io/lemmy-blog/posts/cargo-revolution/" in text
+    assert "Continue reading: https://jweese001.github.io/lemmy-blog/posts/cargo-revolution/" in text
     assert len(text) <= 300
 
 

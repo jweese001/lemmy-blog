@@ -142,7 +142,7 @@ def is_post_one_day_old(post_date: datetime, *, now: datetime | None = None) -> 
 
 def compose_share_text(title: str, description: str, url: str, *, max_length: int = MAX_POST_LENGTH) -> str:
     prefix = f"New on Lemmy's Mic: {title}"
-    suffix = url
+    suffix = f"Continue reading: {url}"
     separator = "\n\n"
     base = f"{prefix}{separator}{description}{separator}{suffix}"
     if len(base) <= max_length:
@@ -156,7 +156,6 @@ def compose_share_text(title: str, description: str, url: str, *, max_length: in
     if len(trimmed_description) < len(description):
         trimmed_description = trimmed_description.rstrip(" .,;:!?-") + "…"
     return f"{prefix}{separator}{trimmed_description}{separator}{suffix}"
-
 
 def load_shared_slugs(ledger_path: Path = DEFAULT_LEDGER_PATH) -> set[str]:
     if not ledger_path.exists():
