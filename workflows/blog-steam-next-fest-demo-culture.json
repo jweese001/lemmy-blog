@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "exportedAt": 1782770765428,
+  "project": {
+    "id": "blog-steam-next-fest-demo-culture-1782770765428",
+    "name": "Hero: June's Steam Next Fest Proved Demo Culture Still Rules",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "A tired but excited indie game hunter at a cluttered desk, multiple strange demo worlds spilling out of a glowing monitor into the room: colony sim blueprints, a tiny pixel village, an alien landscape, sticky notes and controller cables everywhere, comic book illustration with heavy ink lines, deep shadows, and neon cyan-magenta highlights."
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 50,
+          "y": 500
+        },
+        "data": {
+          "label": "Avoid",
+          "content": "Never include Lemmy Kilmister, Mot\u00f6rhead imagery, metal bassists in leather jackets, or self-portraits of rock legends. No generic punk rockers with mohawks unless specifically requested. Focus on the actual subject matter described in the scene."
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1782770765428,
+    "updatedAt": 1782770765428
+  }
+}
