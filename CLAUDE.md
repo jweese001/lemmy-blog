@@ -299,7 +299,23 @@ python scripts/create_post.py --title "Title" --draft  # Create draft
 
 # Deployment
 git add -A && git commit -m "Add post: Title" && git push
+
+# Bluesky sharing
+# Runs automatically each day and posts articles that are exactly one day old.
+# Manual dispatch supports a specific slug from GitHub Actions.
+python scripts/share_latest_to_bluesky.py --dry-run
+python scripts/share_latest_to_bluesky.py --slug post-slug --allow-stale --dry-run
 ```
+
+## Bluesky Posting
+
+Bluesky sharing is wired through `.github/workflows/bluesky.yml`.
+
+- Schedule: daily at 14:00 UTC.
+- Rule: shares the latest article only when it is exactly one calendar day old.
+- Manual run: GitHub Actions → "Share latest post to Bluesky" → optional `slug`, `allow_stale`, and `dry_run` inputs.
+- Required repository secrets: `BLUESKY_HANDLE` and `BLUESKY_APP_PASSWORD`.
+- Shared slugs are recorded in `.github/bluesky-shared-posts.json` to prevent duplicate posts.
 
 ## Troubleshooting
 

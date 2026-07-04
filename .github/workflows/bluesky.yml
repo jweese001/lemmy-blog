@@ -1,0 +1,84 @@
+name: Share latest post to Bluesky
+
+on:
+  schedule:
+    # Share posts the day after publication. 14:00 UTC = morning US time.
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Specific post slug to share manually"
+        required: false
+        type: string
+      allow_stale:
+        description: "Allow sharing a historical post when slug is provided"
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: "Preview the Bluesky post without publishing"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bluesky-share
+  cancel-in-progress: false
+
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Share to Bluesky
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          INPUT_SLUG: ${{ inputs.slug }}
+          INPUT_ALLOW_STALE: ${{ inputs.allow_stale }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+
+          args=(--ledger .github/bluesky-shared-posts.json)
+
+          if [[ -n "${INPUT_SLUG:-}" ]]; then
+            args+=(--slug "$INPUT_SLUG")
+          fi
+
+          if [[ "${INPUT_ALLOW_STALE:-false}" == "true" ]]; then
+            args+=(--allow-stale)
+          fi
+
+          if [[ "${INPUT_DRY_RUN:-false}" == "true" ]]; then
+            args+=(--dry-run)
+          fi
+
+          python scripts/share_latest_to_bluesky.py "${args[@]}"
+
+      - name: Commit shared-post ledger
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- .github/bluesky-shared-posts.json; then
+            echo "No ledger changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/bluesky-shared-posts.json
+          git commit -m "chore: record shared Bluesky post"
+          git push
