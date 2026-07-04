@@ -28,6 +28,19 @@ MAX_POST_LENGTH = 300
 LINK_RE = re.compile(r"https?://\S+")
 
 
+def load_env_file(path: Path) -> dict[str, str]:
+    values: dict[str, str] = {}
+    if not path.exists():
+        return values
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        values[key.strip()] = value.strip().strip('"').strip("'")
+    return values
+
+
 @dataclass(frozen=True)
 class PostMetadata:
     path: Path
@@ -173,11 +186,21 @@ def save_shared_slug(ledger_path: Path, slug: str) -> None:
     ledger_path.write_text(json.dumps(sorted(existing), indent=2) + "\n", encoding="utf-8")
 
 
-def load_credentials(credentials_path: Path = DEFAULT_CREDENTIALS_PATH) -> BlueskyCredentials:
+def load_credentials(
+    credentials_path: Path = DEFAULT_CREDENTIALS_PATH,
+    *,
+    blog_root: Path = BLOG_ROOT,
+) -> BlueskyCredentials:
     env_identifier = os.getenv(BLUESKY_HANDLE_ENV)
     env_password = os.getenv(BLUESKY_PASSWORD_ENV)
     if env_identifier and env_password:
         return BlueskyCredentials(identifier=env_identifier, password=env_password)
+
+    dotenv_values = load_env_file(blog_root / ".env")
+    dotenv_identifier = dotenv_values.get(BLUESKY_HANDLE_ENV)
+    dotenv_password = dotenv_values.get(BLUESKY_PASSWORD_ENV)
+    if dotenv_identifier and dotenv_password:
+        return BlueskyCredentials(identifier=dotenv_identifier, password=dotenv_password)
 
     if not credentials_path.exists():
         raise FileNotFoundError(
@@ -334,7 +357,7 @@ def share_latest_post(
             url=target.url,
         )
 
-    credentials = load_credentials(credentials_path)
+    credentials = load_credentials(credentials_path, blog_root=blog_root)
     session = create_session(credentials)
     response = create_bluesky_post(session["accessJwt"], session["did"], text, target)
     save_shared_slug(ledger_path, target.slug)

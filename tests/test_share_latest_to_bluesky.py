@@ -4,9 +4,11 @@ from pathlib import Path
 from PIL import Image
 
 from scripts.share_latest_to_bluesky import (
+    BlueskyCredentials,
     build_post_url,
     compose_share_text,
     is_post_one_day_old,
+    load_credentials,
     load_shared_slugs,
     parse_post_file,
     resolve_latest_post,
@@ -15,7 +17,7 @@ from scripts.share_latest_to_bluesky import (
     share_latest_post,
     ShareResult,
     PostMetadata,
- )
+)
 
 
 def _write_post(path: Path, *, title: str, date: str, image: str, description: str) -> Path:
@@ -116,6 +118,25 @@ def test_shared_slug_ledger_round_trip(tmp_path: Path):
 
 def test_build_post_url():
     assert build_post_url("cargo-revolution") == "https://jweese001.github.io/lemmy-blog/posts/cargo-revolution/"
+
+
+def test_load_credentials_reads_repo_env_when_explicit_sources_are_missing(tmp_path: Path, monkeypatch):
+    blog_root = tmp_path / "blog"
+    blog_root.mkdir()
+    (blog_root / ".env").write_text(
+        "BLUESKY_HANDLE=lemmysmic.bsky.social\nBLUESKY_APP_PASSWORD=app-password\n",
+        encoding="utf-8",
+    )
+    credentials_path = tmp_path / "missing-credentials.json"
+    monkeypatch.delenv("BLUESKY_HANDLE", raising=False)
+    monkeypatch.delenv("BLUESKY_APP_PASSWORD", raising=False)
+
+    credentials = load_credentials(credentials_path, blog_root=blog_root)
+
+    assert credentials == BlueskyCredentials(
+        identifier="lemmysmic.bsky.social",
+        password="app-password",
+    )
 
 
 def test_parse_post_file_requires_image_frontmatter(tmp_path: Path):
