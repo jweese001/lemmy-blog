@@ -20,6 +20,7 @@ import base64
 import json
 import os
 import re
+import stat
 import sys
 import time
 from pathlib import Path
@@ -32,6 +33,8 @@ PROJECT_DIR = SCRIPT_DIR.parent
 WORKFLOW_DIR = PROJECT_DIR / "workflows"
 TEMPLATE_DIR = WORKFLOW_DIR / "templates"
 IMAGE_DIR = PROJECT_DIR / "static" / "images"
+DEFAULT_KEY_FILE = Path.home() / ".config" / "lemmy-blog" / "gemini.key"
+HERMES_ENV_FILE = Path.home() / ".hermes" / ".env"
 
 # w33s3 style - consistent dark aesthetic
 W33S3_STYLE = {
@@ -43,6 +46,7 @@ W33S3_STYLE = {
 # Gemini API config - Use Gemini 3 Pro for 16:9 aspect ratio support
 GEMINI_MODEL = "gemini-3-pro-image-preview"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+ALLOW_FLOWBOARD_KEY_FALLBACK = os.environ.get("ALLOW_FLOWBOARD_KEY_FALLBACK", "").strip().lower() in {"1", "true", "yes", "on"}
 
 
 def slugify(title: str) -> str:
@@ -51,6 +55,86 @@ def slugify(title: str) -> str:
     slug = re.sub(r'[^\w\s-]', '', slug)
     slug = re.sub(r'[-\s]+', '-', slug)
     return slug.strip('-')
+
+
+def warn_security(message: str) -> None:
+    """Emit a security-related warning to stderr."""
+    print(f"[security] {message}", file=sys.stderr)
+
+
+def sanitize_secret_text(text: str, api_key: str | None = None) -> str:
+    """Redact secret-bearing substrings before printing errors."""
+    sanitized = re.sub(r'([?&]key=)[^&\s]+', r'\1[REDACTED]', text)
+    sanitized = re.sub(
+        r'(Authorization:\s*Bearer\s+)[^\s\"\']+',
+        r'\1[REDACTED]',
+        sanitized,
+        flags=re.IGNORECASE,
+    )
+    if api_key:
+        sanitized = sanitized.replace(api_key, "[REDACTED]")
+    return sanitized
+
+
+def read_repo_env_key_path() -> str | None:
+    """Backward-compatible repo .env lookup with a deprecation warning."""
+    env_file = PROJECT_DIR / ".env"
+    if not env_file.exists():
+        return None
+
+    for line in env_file.read_text().splitlines():
+        if line.startswith("GEMINI_API_KEY_FILE="):
+            warn_security(
+                f"Using {env_file} for secret discovery is deprecated. "
+                "Prefer setting GEMINI_API_KEY_FILE in the shell or Hermes profile instead."
+            )
+            return line.split("=", 1)[1].strip()
+    return None
+
+
+def read_env_file_value(env_file: Path, key_names: list[str]) -> str | None:
+    """Read the first matching non-empty key from a simple KEY=VALUE env file."""
+    if not env_file.exists():
+        return None
+
+    for raw_line in env_file.read_text().splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key.strip() in key_names:
+            parsed = value.strip().strip('"').strip("'")
+            if parsed:
+                return parsed
+    return None
+
+
+def validate_key_file_permissions(key_file: Path) -> None:
+    """Warn if a key file appears too broadly readable on POSIX systems."""
+    try:
+        mode = key_file.stat().st_mode
+    except OSError:
+        return
+
+    if os.name == "posix" and mode & (stat.S_IRWXG | stat.S_IRWXO):
+        warn_security(
+            f"Key file {key_file} is group/world accessible. Restrict it with: chmod 600 {key_file}"
+        )
+
+
+def read_key_from_file(path_str: str, *, source_label: str) -> str | None:
+    """Read an API key from a file, warning and continuing if the file is missing or empty."""
+    key_file = Path(path_str).expanduser()
+    if not key_file.exists():
+        warn_security(f"{source_label} points to a missing file: {key_file}")
+        return None
+
+    validate_key_file_permissions(key_file)
+    api_key = key_file.read_text().strip()
+    if not api_key:
+        warn_security(f"{source_label} points to an empty file: {key_file}")
+        return None
+    return api_key
 
 
 # =============================================================================
@@ -125,47 +209,63 @@ def create_workflow_from_template(
 
 
 def get_api_key() -> str:
-    """Get Gemini API key from environment, file, or FlowBoard settings."""
-    # Try environment variable first
+    """Get Gemini API key from environment, local config, or an explicitly enabled FlowBoard fallback."""
+    # Explicit environment variable override
     api_key = os.environ.get("GEMINI_API_KEY")
     if api_key:
         return api_key.strip()
 
-    # Try loading from key file (referenced in .env or directly)
+    # Preferred non-interactive source: an explicit external key file
     key_file_path = os.environ.get("GEMINI_API_KEY_FILE")
-    if not key_file_path:
-        # Check .env file for key file path
-        env_file = PROJECT_DIR / ".env"
-        if env_file.exists():
-            with open(env_file) as f:
-                for line in f:
-                    if line.startswith("GEMINI_API_KEY_FILE="):
-                        key_file_path = line.split("=", 1)[1].strip()
-                        break
-
     if key_file_path:
-        key_file = Path(key_file_path)
-        if key_file.exists():
-            with open(key_file) as f:
-                api_key = f.read().strip()
-                if api_key:
-                    return api_key
+        api_key = read_key_from_file(key_file_path, source_label="GEMINI_API_KEY_FILE")
+        if api_key:
+            return api_key
 
-    # Try FlowBoard's localStorage export (if available)
-    flowboard_settings = Path.home() / ".flowboard" / "settings.json"
-    if flowboard_settings.exists():
-        try:
-            with open(flowboard_settings) as f:
-                settings = json.load(f)
-                api_key = settings.get("apiKeys", {}).get("gemini")
-                if api_key:
-                    return api_key
-        except (json.JSONDecodeError, KeyError):
-            pass
+    # Default documented local automation path
+    if DEFAULT_KEY_FILE.exists():
+        api_key = read_key_from_file(str(DEFAULT_KEY_FILE), source_label="default key file")
+        if api_key:
+            return api_key
+
+    # Hermes profile/global env file fallback for unattended automation
+    hermes_env_api_key = read_env_file_value(HERMES_ENV_FILE, ["GEMINI_API_KEY", "GOOGLE_API_KEY"])
+    if hermes_env_api_key:
+        return hermes_env_api_key
+
+    hermes_env_key_file = read_env_file_value(HERMES_ENV_FILE, ["GEMINI_API_KEY_FILE"])
+    if hermes_env_key_file:
+        api_key = read_key_from_file(hermes_env_key_file, source_label=f"{HERMES_ENV_FILE} GEMINI_API_KEY_FILE")
+        if api_key:
+            return api_key
+
+    # Backward-compatible repo .env lookup with warning, but do not let stale migration paths abort the run
+    repo_key_file_path = read_repo_env_key_path()
+    if repo_key_file_path:
+        api_key = read_key_from_file(repo_key_file_path, source_label=f"{PROJECT_DIR / '.env'} GEMINI_API_KEY_FILE")
+        if api_key:
+            return api_key
+
+    # Optional manual fallback for local FlowBoard sessions only
+    if ALLOW_FLOWBOARD_KEY_FALLBACK:
+        flowboard_settings = Path.home() / ".flowboard" / "settings.json"
+        if flowboard_settings.exists():
+            try:
+                with open(flowboard_settings) as f:
+                    settings = json.load(f)
+                    api_key = settings.get("apiKeys", {}).get("gemini")
+                    if api_key:
+                        warn_security(
+                            "Using FlowBoard localStorage-derived credentials. Prefer GEMINI_API_KEY_FILE for automation."
+                        )
+                        return api_key
+            except (json.JSONDecodeError, KeyError):
+                pass
 
     raise ValueError(
-        "Gemini API key not found. Set GEMINI_API_KEY environment variable, "
-        "GEMINI_API_KEY_FILE path, or configure in FlowBoard settings."
+        "Gemini API key not found. Set GEMINI_API_KEY, set GEMINI_API_KEY_FILE to an external key file, "
+        f"place a key at {DEFAULT_KEY_FILE}, add GEMINI_API_KEY or GEMINI_API_KEY_FILE to {HERMES_ENV_FILE}, "
+        "or explicitly opt into FlowBoard fallback with ALLOW_FLOWBOARD_KEY_FALLBACK=1."
     )
 
 
@@ -349,15 +449,16 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
     }
 
     response = requests.post(
-        f"{GEMINI_API_URL}?key={api_key}",
+        GEMINI_API_URL,
+        params={"key": api_key},
         headers={"Content-Type": "application/json"},
         json=request_body,
         timeout=120
     )
 
     if not response.ok:
-        error_text = response.text
-        raise RuntimeError(f"Gemini API error ({response.status_code}): {error_text[:500]}")
+        error_text = sanitize_secret_text(response.text[:500], api_key=api_key)
+        raise RuntimeError(f"Gemini API error ({response.status_code}): {error_text}")
 
     data = response.json()
 
@@ -378,7 +479,8 @@ def generate_image_from_workflow(workflow: dict, api_key: str) -> bytes:
         parts = candidate.get("content", {}).get("parts", [])
         for part in parts:
             if "text" in part:
-                raise RuntimeError(f"Gemini response: {part['text']}")
+                safe_text = sanitize_secret_text(part["text"], api_key=api_key)
+                raise RuntimeError(f"Gemini response: {safe_text}")
 
     raise RuntimeError("No image in Gemini response")
 
@@ -521,7 +623,7 @@ def main():
         print(f'\nAdd to post frontmatter: image: "/images/hero-{slug}.jpg"')
 
     except Exception as e:
-        print(f"\nError generating image: {e}", file=sys.stderr)
+        print(f"\nError generating image: {sanitize_secret_text(str(e))}", file=sys.stderr)
         print("Creating fallback gradient...", file=sys.stderr)
 
         fallback_path = create_gradient_fallback(slug)
