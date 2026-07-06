@@ -1,4 +1,4 @@
-#!/home/lemmy/lemmy-blog/.venv/bin/python
+#!/usr/bin/env python3
 """
 Generate hero images for Lemmy's Mic blog posts using Gemini API.
 

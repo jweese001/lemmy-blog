@@ -1,4 +1,4 @@
-#!/home/lemmy/lemmy-blog/.venv/bin/python
+#!/usr/bin/env python3
 """
 Create a complete blog post for Lemmy's Mic.
 

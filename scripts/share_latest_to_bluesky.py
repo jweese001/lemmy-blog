@@ -1,4 +1,4 @@
-#!/home/lemmy/lemmy-blog/.venv/bin/python
+#!/usr/bin/env python3
 """Share the latest Lemmy's Mic post to Bluesky one day after publication."""
 
 from __future__ import annotations

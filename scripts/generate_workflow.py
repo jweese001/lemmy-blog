@@ -1,4 +1,4 @@
-#!/home/lemmy/lemmy-blog/.venv/bin/python
+#!/usr/bin/env python3
 """
 Generate FlowBoard workflow JSON files for blog hero images.
 
