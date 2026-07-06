@@ -47,6 +47,7 @@ class PostMetadata:
     title: str
     slug: str
     date: datetime
+    is_draft: bool
     image_path: Path
     image_web_path: str
     description: str
@@ -68,8 +69,8 @@ class BlueskyCredentials:
     password: str
 
 
-def build_post_url(slug: str) -> str:
-    return f"https://jweese001.github.io/lemmy-blog/posts/{slug}/"
+def build_post_url(path_stem: str) -> str:
+    return f"https://jweese001.github.io/lemmy-blog/posts/{path_stem}/"
 
 
 def parse_simple_frontmatter(frontmatter: str) -> dict[str, str]:
@@ -98,6 +99,8 @@ def parse_post_file(path: Path, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
     date_str = values.get("date")
     image_web_path = values.get("image")
     description = values.get("description")
+    draft_value = values.get("draft", "false")
+    is_draft = draft_value.strip().lower() == "true"
 
     if not title:
         raise ValueError(f"Post {path} is missing title frontmatter")
@@ -108,8 +111,8 @@ def parse_post_file(path: Path, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
     if not description:
         raise ValueError(f"Post {path} is missing description frontmatter")
 
-    slug = path.stem
-    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+    path_stem = path.stem
+    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", path_stem)
     image_path = blog_root / "static" / image_web_path.lstrip("/")
 
     return PostMetadata(
@@ -117,10 +120,11 @@ def parse_post_file(path: Path, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
         title=title,
         slug=slug,
         date=datetime.fromisoformat(date_str),
+        is_draft=is_draft,
         image_path=image_path,
         image_web_path=image_web_path,
         description=description,
-        url=build_post_url(slug),
+        url=build_post_url(path_stem),
     )
 
 
@@ -141,16 +145,36 @@ def resolve_target_post(
     raise FileNotFoundError(f"No post found for slug '{slug}' in {posts_dir}")
 
 def resolve_latest_post(posts_dir: Path = POSTS_DIR, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
-    candidates = [parse_post_file(path, blog_root=blog_root) for path in posts_dir.glob("*.md")]
+    candidates = [
+        post
+        for path in posts_dir.glob("*.md")
+        if not (post := parse_post_file(path, blog_root=blog_root)).is_draft
+    ]
     if not candidates:
-        raise FileNotFoundError(f"No posts found in {posts_dir}")
+        raise FileNotFoundError(f"No published posts found in {posts_dir}")
     return max(candidates, key=lambda post: post.date)
 
 
-def is_post_one_day_old(post_date: datetime, *, now: datetime | None = None) -> bool:
+def is_public_post_live(url: str, *, timeout: int = 20) -> bool:
+    response = requests.get(url, allow_redirects=True, timeout=timeout)
+    return response.status_code == 200
+
+
+def resolve_latest_live_post(posts_dir: Path = POSTS_DIR, *, blog_root: Path = BLOG_ROOT) -> PostMetadata:
+    candidates = [
+        post
+        for path in posts_dir.glob("*.md")
+        if not (post := parse_post_file(path, blog_root=blog_root)).is_draft and is_public_post_live(post.url)
+    ]
+    if not candidates:
+        raise FileNotFoundError(f"No live published posts found in {posts_dir}")
+    return max(candidates, key=lambda post: post.date)
+
+
+def is_post_at_least_one_day_old(post_date: datetime, *, now: datetime | None = None) -> bool:
     now = now or datetime.now(timezone.utc)
     normalized_now = now.astimezone(post_date.tzinfo)
-    return (normalized_now.date() - post_date.date()).days == 1
+    return (normalized_now.date() - post_date.date()).days >= 1
 
 
 def compose_share_text(title: str, description: str, url: str, *, max_length: int = MAX_POST_LENGTH) -> str:
@@ -319,34 +343,50 @@ def share_latest_post(
     slug: str | None = None,
     allow_stale: bool = False,
  ) -> ShareResult:
-    target = resolve_target_post(posts_dir, slug=slug, blog_root=blog_root)
+    shared = load_shared_slugs(ledger_path)
+
+    if slug is None:
+        target = resolve_latest_live_post(posts_dir, blog_root=blog_root)
+        if not is_post_at_least_one_day_old(target.date, now=now):
+            return ShareResult(
+                status="skipped",
+                message=f"Latest live published post {target.slug} is less than one day old; skipping share.",
+                slug=target.slug,
+                url=target.url,
+            )
+        if target.slug in shared:
+            return ShareResult(
+                status="skipped",
+                message=f"Latest live published post {target.slug} was already shared to Bluesky.",
+                slug=target.slug,
+                url=target.url,
+            )
+    else:
+        target = resolve_target_post(posts_dir, slug=slug, blog_root=blog_root)
+        if not is_public_post_live(target.url):
+            return ShareResult(
+                status="skipped",
+                message=f"Target post {target.slug} is not yet live on the public site.",
+                slug=target.slug,
+                url=target.url,
+            )
+        if not is_post_at_least_one_day_old(target.date, now=now) and not allow_stale:
+            return ShareResult(
+                status="skipped",
+                message=f"Target post {target.slug} is less than one day old; rerun with --allow-stale to override for manual testing.",
+                slug=target.slug,
+                url=target.url,
+            )
+        if target.slug in shared:
+            return ShareResult(
+                status="skipped",
+                message=f"Target post {target.slug} was already shared to Bluesky.",
+                slug=target.slug,
+                url=target.url,
+            )
+
     if not target.image_path.exists():
         raise FileNotFoundError(f"Hero image not found for target post: {target.image_path}")
-
-    if not is_post_one_day_old(target.date, now=now):
-        if slug is None:
-            return ShareResult(
-                status="skipped",
-                message=f"Latest post {target.slug} is not exactly one day old; skipping share.",
-                slug=target.slug,
-                url=target.url,
-            )
-        if not allow_stale:
-            return ShareResult(
-                status="skipped",
-                message=f"Target post {target.slug} is historical; rerun with --allow-stale to override for manual testing.",
-                slug=target.slug,
-                url=target.url,
-            )
-
-    shared = load_shared_slugs(ledger_path)
-    if target.slug in shared:
-        return ShareResult(
-            status="skipped",
-            message=f"Target post {target.slug} was already shared to Bluesky.",
-            slug=target.slug,
-            url=target.url,
-        )
 
     text = compose_share_text(target.title, target.description, target.url)
     if dry_run:
