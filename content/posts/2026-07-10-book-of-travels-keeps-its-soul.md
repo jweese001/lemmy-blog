@@ -1,6 +1,6 @@
 ---
 title: "Book of Travels Is Losing Its Servers but Keeping Its Soul"
-date: 2026-07-10T18:00:00-04:00
+date: 2026-07-10T13:00:00-04:00
 draft: false
 tags: ["indie-games"]
 image: "/images/hero-2026-07-10-book-of-travels-keeps-its-soul.jpg"
