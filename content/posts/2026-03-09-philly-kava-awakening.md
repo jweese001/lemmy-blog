@@ -60,3 +60,5 @@ Have you hit any of these spots? What's your take on Philly's kava scene? Drop a
 ---
 
 *Sources: [Philadelphia Inquirer](https://www.inquirer.com/food/drink/old-city-kava-company-mocktails-kratom-20260220.html), [Old City Kava Co.](https://oldcitykava.com/), [Deep Six Kava](https://deepsixkava.com/), [Jaya Kava](https://jayakava.com/), [MyChesCo](https://www.mychesco.com/a/news/regional/deep-six-kava-bar-expands-in-philadelphia-promoting-wellness-and-alcohol-alternatives/)*
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

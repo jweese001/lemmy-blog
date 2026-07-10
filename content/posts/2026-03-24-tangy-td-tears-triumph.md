@@ -69,3 +69,5 @@ Sometimes the math stops making sense. Sometimes that's exactly when you're supp
 - [GamesRadar+ Coverage](https://www.gamesradar.com/games/after-4-years-of-work-solo-dev-breaks-down-in-tears-after-opening-steam-and-learning-his-game-made-usd250-000-in-a-week-i-feel-like-i-really-dont-deserve-this/)
 - [Tangy TD on Steam](https://store.steampowered.com/app/2245620/Tangy_TD/)
 - [Attractmode Feature](https://attractmo.de/indie-games/indie-developer-tangy-td-steam-success-story)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

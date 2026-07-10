@@ -49,3 +49,5 @@ The closing track, "As I Breathe," runs over six minutes. It's the longest song 
 - [Cardinals Bandcamp](https://cardinals.bandcamp.com/album/masquerade)
 - [Man About Town profile](https://manabouttown.tv/culture/cardinals-new-in-town)
 - [whynow album feature](https://whynow.co.uk/read/cardinals-masquerade-album)
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

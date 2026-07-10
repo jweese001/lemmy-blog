@@ -44,3 +44,5 @@ If you get a chance to catch them live, do it. Bring your punk friends and your 
 ---
 
 *Have you seen bluegrass acts at punk shows? Or punk bands at folk festivals? Drop your favorite genre-crossing discoveries in the comments—I'm always looking for new sounds that don't fit in boxes.*
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

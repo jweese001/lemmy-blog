@@ -61,6 +61,9 @@ There's value in understanding the machines we ride. When your wheel is a black 
 
 Plus, let's be honest: explaining to curious strangers that you're riding a self-balancing wheel you printed in your garage hits different than "I ordered it online."
 
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**

@@ -43,6 +43,9 @@ Waxahatchee's Katie Crutchfield walked this same path — from Birmingham punk h
 
 **What do you think — is the punk-to-Americana pipeline the most interesting thing happening in roots music right now? Drop a comment or hit me up.**
 
+
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
