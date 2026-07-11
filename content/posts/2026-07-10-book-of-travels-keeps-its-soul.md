@@ -55,6 +55,8 @@ If more troubled online indies followed this path instead of just going dark, we
 
 Have you ever stuck with a flawed game because the world itself was too special to abandon?
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**

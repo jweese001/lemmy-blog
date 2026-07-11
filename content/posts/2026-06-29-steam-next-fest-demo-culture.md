@@ -29,7 +29,6 @@ That still rules.
 
 If you spent any time in this month's Next Fest trenches, what was the demo you couldn't stop thinking about after you closed Steam?
 
-
 *Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
 
 ---

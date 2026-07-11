@@ -47,7 +47,6 @@ It's available March 30 on Steam, GOG, and Humble. Not free-to-play. No microtra
 
 What's the longest you've stuck with a game in Early Access? And do you think more devs should take the Stellar Tactics approach — shipping when it's actually done — or is the "release early, iterate fast" model here to stay?
 
-
 *Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
 
 ---

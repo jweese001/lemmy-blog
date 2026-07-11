@@ -55,7 +55,6 @@ If you're in Miami when they open, hit the terrace at sunset. Order something wi
 
 What's the most interesting hybrid kava bar concept you've encountered? Drop a comment—always looking for new spots to check out.
 
-
 *Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
 
 ---

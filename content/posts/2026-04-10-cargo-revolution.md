@@ -43,7 +43,6 @@ If you've been on the fence about electric bikes, now's the time to stop thinkin
 
 The car commute isn't dead, but it's definitely not winning anymore.
 
-
 *Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
 
 ---

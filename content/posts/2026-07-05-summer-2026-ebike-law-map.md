@@ -47,6 +47,8 @@ Because the whole point of e-bikes is freedom with function. The minute the law 
 
 What’s the weirdest e-bike rule you’ve had to explain to a non-rider lately?
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
