@@ -53,6 +53,8 @@ That kid picking albums by their artwork in Cincinnati? He's still there. He jus
 
 *What other artists do you know who carried punk DNA into unexpected genres? Drop me a line—I'm always hunting for the lineage.*
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -63,5 +65,3 @@ That kid picking albums by their artwork in Cincinnati? He's still there. He jus
 - [Brooklyn Vegan - Arlo McKinley Discusses His 5 Favorite Punk & Metal Albums](https://www.brooklynvegan.com/country-singer-arlo-mckinley-discusses-his-5-favorite-punk-metal-albums/)
 
 ---
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

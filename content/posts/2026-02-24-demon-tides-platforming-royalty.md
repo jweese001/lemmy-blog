@@ -47,6 +47,8 @@ For $24.99, that's a steal. Fabraz has been building toward this since their Sli
 
 Have you picked up Demon Tides yet? I'm curious if the speedrunning community is going to turn this into the next movement tech obsession. The toolkit seems designed for it.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -55,5 +57,3 @@ Have you picked up Demon Tides yet? I'm curious if the speedrunning community is
 - [Lords of Gaming - The New Queen of 3D Platformers](https://lordsofgaming.net/2026/02/demon-tides-review-the-new-queen-of-3d-platformers/)
 - [OpenCritic - Demon Tides Reviews](https://opencritic.com/game/20127/demon-tides)
 - [Fabraz Official Site](https://www.fabraz.com/)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

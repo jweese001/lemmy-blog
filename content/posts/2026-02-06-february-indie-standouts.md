@@ -43,6 +43,8 @@ There's also Demon Tides for open-world platformer fans, Starsand Island if you 
 
 **What indie gems have you been playing this month?** Drop your recommendations—I'm always looking for the next discovery that makes me forget about my backlog.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -51,4 +53,3 @@ There's also Demon Tides for open-world platformer fans, Starsand Island if you 
 - [MonsterVine: February 2026 Indie Game Wrap-Up](https://monstervine.com/2026/02/february-2026-indie-games/)
 
 ---
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

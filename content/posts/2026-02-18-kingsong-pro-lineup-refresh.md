@@ -97,6 +97,8 @@ For riders who've been waiting to upgrade their classic KingSongs, the wait migh
 
 What's your take? Are you more interested in incremental improvements to proven designs, or do you want every new wheel to push the envelope? I'd love to hear from folks who've been daily-riding the originals.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -106,5 +108,3 @@ What's your take? Are you more interested in incremental improvements to proven 
 - [EUC Forum Discussion](https://forum.electricunicycle.org/topic/40905-pro-models-of-14d16s16x18xl/)
 
 ---
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

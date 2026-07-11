@@ -47,6 +47,8 @@ The result isn't folk-punk or cowpunk or any hyphenated compromise. It's just mu
 
 What's your favorite example of punk ethos showing up in non-punk music? Drop some recommendations—I'm always hunting for that energy in unexpected places.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -55,5 +57,3 @@ What's your favorite example of punk ethos showing up in non-punk music? Drop so
 - [Americana Highways Interview](https://americanahighways.org/2021/07/16/interview-soren-staff-of-them-coulee-boys/)
 - [Smile Politely Feature](https://www.smilepolitely.com/music/from-bible-camp-to-bluegrass-punk-band-them-coulee-boys-defy-genres/)
 - [Official Website](https://www.themcouleeboys.com)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

@@ -37,11 +37,11 @@ Wanderburg is targeting 2026 for release, which means we're probably looking at 
 
 If you missed the demo, throw it on your wishlist. This is exactly the kind of weird, premise-driven indie that makes the Steam ecosystem worth paying attention to.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
 - [GamesRadar](https://www.gamesradar.com/games/roguelike/this-might-be-the-fastest-ive-gotten-sucked-into-a-roguelike-all-year-building-the-perfect-war-machine-in-this-steam-next-fest-demo-is-so-fun-its-hard-to-stop/)
 - [PC Gamer](https://www.pcgamer.com/games/roguelike/wanderburg-is-howls-moving-castle-if-it-were-a-roguelike-where-you-duke-it-out-as-a-castle-on-wheels/)
 - [Steam](https://store.steampowered.com/app/3624140/Wanderburg)
-
-*What's your favorite "you are the thing" game? Drop me a line on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

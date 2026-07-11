@@ -16,12 +16,22 @@ def test_ensure_bluesky_cta_adds_link_after_trailing_question_before_sources():
     assert updated.index(BLUESKY_CTA) < updated.index("**Sources:**")
 
 
-def test_ensure_bluesky_cta_does_not_duplicate_existing_canonical_link():
+def test_ensure_bluesky_cta_normalizes_existing_profile_link_to_single_canonical_cta():
     content = "Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social)."
 
     updated = ensure_bluesky_cta(content)
 
-    assert updated == content
+    assert updated == BLUESKY_CTA
+    assert updated.count("https://bsky.app/profile/lemmysmic.bsky.social") == 1
+
+
+def test_ensure_bluesky_cta_moves_existing_canonical_cta_before_sources():
+    content = f"Closing thought.\n\n---\n\n**Sources:**\n- example\n\n---\n{BLUESKY_CTA}"
+
+    updated = ensure_bluesky_cta(content)
+
+    assert updated.index(BLUESKY_CTA) < updated.index("**Sources:**")
+    assert updated.count(BLUESKY_CTA) == 1
 
 
 def test_ensure_bluesky_cta_does_not_treat_plain_bluesky_mention_as_existing_cta():

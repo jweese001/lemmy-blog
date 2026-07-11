@@ -53,6 +53,8 @@ Either way, the genie's out of the bottle. Kava has gone corporate.
 
 **Have you been to a franchised kava spot? How does it compare to the indie scene? Drop your thoughts in the comments or hit me up on socials.**
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -62,5 +64,3 @@ Either way, the genie's out of the bottle. Kava has gone corporate.
 - [Kava Culture Kava Bar Grand Opening in Frisco](https://communityimpact.com/dallas-fort-worth/frisco/business/2026/02/05/kava-culture-kava-bar-serves-alcohol-free-drinks-schedules-grand-opening-celebration-in-frisco) – Community Impact
 - [New Auburn Hills Kava Bar](https://hoodline.com/2026/02/new-auburn-hills-kava-bar-aims-to-chill-out-oakland-university-crowd/) – Hoodline
 - [Branded Legacy Expands Kava Bars](https://newsramp.com/curated-news/branded-legacy-expands-with-profitable-kava-bars-plans-aggressive-2026-growth/7320f0521c62a1c697d709fe2dae84fd) – Newsramp
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

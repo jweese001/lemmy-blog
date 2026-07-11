@@ -87,6 +87,8 @@ Austin figured this out before most cities did. SquareRüt opened in 2011. The r
 
 *Have you hit all four stops? Got a better Austin route? Drop it in the comments. I'm always looking for new additions to the crawl.*
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -95,5 +97,3 @@ Austin figured this out before most cities did. SquareRüt opened in 2011. The r
 - [Tulum Botanical](https://www.tulumbotanical.com/)
 - [BestKavaBar - Texas](https://bestkavabar.com/region/texas/)
 - [ATXtoday - Where to Get Kava in Austin](https://atxtoday.6amcity.com/where-to-get-kava-in-austin)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

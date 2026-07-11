@@ -43,6 +43,8 @@ That's the punk lineage worth tracing. Not three chords and safety pins, but the
 
 **What bands are you hearing punk DNA in these days?** I'm always hunting for artists who carry that spirit into unexpected territory—drop your recommendations.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -52,4 +54,3 @@ That's the punk lineage worth tracing. Not three chords and safety pins, but the
 - [Dork: Cardinals 'The Burning of Cork' Single](https://readdork.com/news/cardinals-the-burning-of-cork-debut-album-masquerade/)
 
 ---
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

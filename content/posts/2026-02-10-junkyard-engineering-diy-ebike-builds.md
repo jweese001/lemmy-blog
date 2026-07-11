@@ -72,6 +72,8 @@ And that's exactly the energy the e-bike world needs. Not another sleek marketin
 
 Have you built something weird? The r/ebikes community wants to see it. And honestly, so do I.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -79,5 +81,3 @@ Have you built something weird? The r/ebikes community wants to see it. And hone
 - [TheCooldown: Ultra-Upgraded E-Bike with Anti-Chase Flares](https://www.thecooldown.com/green-tech/customize-e-bike-reddit-bike-upgrades/)
 - [Endless Sphere DIY EV Forum](https://endless-sphere.com/sphere/)
 - [Electrek: E-Bike Regulations 2026](https://electrek.co/2026/02/04/while-some-us-states-try-to-kill-e-bikes-one-is-pushing-more-kids-onto-them/)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

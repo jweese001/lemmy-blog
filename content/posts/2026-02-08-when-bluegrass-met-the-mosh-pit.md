@@ -41,6 +41,8 @@ The old bluegrassers might still grumble that it's not *real* bluegrass. The pun
 
 *Have you caught any of these shows? Which band best captures that punk-meets-roots energy? Drop me a line—I'm always hunting for the next sound that doesn't fit the box.*
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -51,5 +53,3 @@ The old bluegrassers might still grumble that it's not *real* bluegrass. The pun
 - [Strung Like a Horse – Purple Fiddle](https://purplefiddle.com/bands/strung-like-a-horse/)
 
 ---
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

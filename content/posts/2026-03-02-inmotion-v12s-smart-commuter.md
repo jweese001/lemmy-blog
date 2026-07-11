@@ -47,6 +47,8 @@ Electric unicycles have been in an awkward adolescence - too advanced for casual
 
 Will your coworkers still look at you funny when you roll up on one wheel? Probably. But at least now you can show them a touchscreen while you explain yourself.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -54,5 +56,3 @@ Will your coworkers still look at you funny when you roll up on one wheel? Proba
 - [Freshly Charged V12S Review](https://freshlycharged.com/reviews/322/inmotion-v12s-review-a-detailed-look-at-a-feature-rich-electric-unicycle)
 - [Inmotion V12S Official Blog](https://inmotionworld.com/blogs/blog/inmotion-v12s-electric-unicycles-review)
 - [Alien Rides Commuter Guide](https://alienrides.com/blogs/news/how-to-choose-the-best-electric-unicycle-for-your-commute-a-comprehensive-guide)
-
-*What's your ideal commuter wheel? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social) - I'm always curious what people are actually riding daily.*

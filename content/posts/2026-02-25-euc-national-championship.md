@@ -58,11 +58,11 @@ If you're already riding, well—there's a national championship to chase.
 
 Who's heading to any of these events? I'm particularly curious about Oak City Shred Fest since the East Coast EUC scene doesn't get as much coverage.
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
 - [USA EUC National Championship Announcement](https://usaeuc.com/news/usa-euc-electric-unicycle-national-championship-launches)
 - [2026 Season Schedule](https://usaeuc.com/seasons/2026)
 - [Amped Electric Games at King of the Motos](https://ampedelectricgames.com/amped-electric-games-brings-sanctioned-ultra1-electric-unicycle-racing-back-to-king-of-the-motos/)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

@@ -64,5 +64,4 @@ And if you're in Colorado Springs, do me a favor: hit both Kava Works and Ohana 
 
 ---
 
-
 *Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

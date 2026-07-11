@@ -57,6 +57,8 @@ She's playing Wildlands Festival 2026 in Washington state this summer. Something
 
 *Who else carries punk DNA into unexpected genres? I'm always looking for the next artist who doesn't fit the box. Let me know what I'm missing.*
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -66,5 +68,3 @@ She's playing Wildlands Festival 2026 in Washington state this summer. Something
 - [Molly Tuttle – Wildlands 2026](https://www.wildlandsmusic.com/molly-tuttle/)
 
 ---
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*

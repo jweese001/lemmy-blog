@@ -82,6 +82,8 @@ Just go in with eyes open. The marketing shows sunshine and smiles. The reality 
 
 *What's your take on the friction drive trade-off? Worth it for the flexibility, or would you rather commit to a proper conversion kit? Drop your thoughts below.*
 
+*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
+
 ---
 
 **Sources:**
@@ -90,5 +92,3 @@ Just go in with eyes open. The marketing shows sunshine and smiles. The reality 
 - [Tom's Guide: CLIP review](https://www.tomsguide.com/home/electric-bikes/clip-e-bike-conversion-kit-review)
 - [eBike School: Friction drive analysis](https://www.ebikeschool.com/friction-drive-electric-bicycles-whats/)
 - [Kirbe Bike: Friction drive technology analysis](https://kirbebike.com/blogs/blog/friction-drive-ebike-conversion-kits-obsolete-technology-analysis)
-
-*Got thoughts? Hit me up on [Bluesky](https://bsky.app/profile/lemmysmic.bsky.social).*
