@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-2026-07-13-kava-bars-college-town-third-places-1783973069270",
+    "name": "Hero: Kava Bars Are Starting to Look Like College-Town Third Places",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "Comic Ink + Warm Gathering",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and warm amber highlights. Cel-shaded shadows, graphic shapes. Warm ochre and earth tones with soft glow accents. Hand-drawn comic book aesthetic with relaxed, communal energy. Influenced by Dave McKean and Moebius. NOT photorealistic. Edge-to-edge composition."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Intimate kava bar interior with low lighting, wooden bowls, tropical plants, comfortable seating areas"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "A downtown college-town kava bar at dusk with a glowing storefront, students with bikes and laptops lingering on the patio, shell bowls and botanical drinks on small tables, flyers on a community bulletin board, warm amber and teal lighting, comic-book ink lines, relaxed social energy, no text"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, alcohol, beer, cocktails, drunk people, party atmosphere, bright lights, nightclub, text, watermarks, stock photo, over-rendered, plastic-looking"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1783973069270,
+    "updatedAt": 1783973069270
+  },
+  "exportedAt": 1783973069270
+}
