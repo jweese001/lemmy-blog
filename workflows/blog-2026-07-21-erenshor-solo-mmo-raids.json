@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-2026-07-21-erenshor-solo-mmo-raids-1784606723357",
+    "name": "Hero: Erenshor Is Making Raid Night a Solo Hobby",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "Comic Ink + Retro Gaming",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Muted palette with selective neon color pops (cyan, magenta). Hand-drawn comic book aesthetic with retro CRT glow influence. Influenced by Kirby and Moebius. NOT photorealistic. Edge-to-edge composition."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Dark room with retro gaming setup, CRT monitors glowing, arcade machines in background, warm ambient lighting from screens"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "A lone adventurer stands in a glowing reliquary command room, directing a party of spectral SimPlayers toward a colossal raid boss through floating tactical sigils and old-school fantasy UI elements; heavy ink comic illustration, chiaroscuro shadows, cel-shaded forms, dark palette with neon cyan and magenta accents, influenced by Jack Kirby and Moebius"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, blurry, text, watermark, stock photo, over-rendered, plastic-looking"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1784606723357,
+    "updatedAt": 1784606723357
+  },
+  "exportedAt": 1784606723357
+}
