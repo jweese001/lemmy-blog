@@ -14,7 +14,7 @@
         "data": {
           "label": "Style",
           "name": "Comic Ink + Urban Motion",
-          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Urban grays with selective accent color pop (one vibrant highlight). Hand-drawn comic book aesthetic with kinetic energy. Influenced by Moebius and Geof Darrow. NOT photorealistic. Edge-to-edge composition."
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. Urban grays with selective accent color pop (one vibrant highlight). Hand-drawn comic book aesthetic with kinetic energy. Influenced by Moebius and Geof Darrow. NOT photorealistic. Edge-to-edge composition. Silent visual storytelling only: no speech balloons, no captions, no sound effects, and no visible text anywhere in the image."
         }
       },
       {
@@ -38,7 +38,7 @@
         },
         "data": {
           "label": "Action",
-          "content": "Nighttime New York street scene with an e-bike delivery rider swapping a rectangular battery at a curbside charging cabinet, glowing cabinet doors, stacked spare battery packs, bike frame and cargo bag in foreground, urban grays with cyan accent lights, heavy ink comic illustration influenced by Moebius and Geof Darrow, bold linework, chiaroscuro, cel-shaded shadows, edge-to-edge composition"
+          "content": "Nighttime New York street scene with an e-bike delivery rider swapping a rectangular battery at a curbside charging cabinet, glowing cabinet doors, stacked spare battery packs, bike frame and cargo bag in foreground, urban grays with cyan accent lights, heavy ink comic illustration influenced by Moebius and Geof Darrow, bold linework, chiaroscuro, cel-shaded shadows, edge-to-edge composition. Tell the story entirely through pose, lighting, motion blur, and environment. Absolutely no speech balloons, no thought bubbles, no comic captions, no sound-effect lettering, no signs with readable or unreadable words, no labels, no logos, no interface text, no stickers, and no stray letterforms anywhere in frame."
         }
       },
       {
@@ -50,7 +50,7 @@
         },
         "data": {
           "label": "Negative",
-          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, blurry, text, watermark, stock photo, over-rendered, plastic-looking, motorcycle gang, aggressive"
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clichés, blurry, text, lettering, typography, words, letters, numbers, speech balloons, thought bubbles, comic captions, onomatopoeia, sound effects, signage, labels, logos, UI text, watermark, stock photo, over-rendered, plastic-looking, motorcycle gang, aggressive"
         }
       },
       {
