@@ -3,7 +3,7 @@ title: "The 16-Inch EUC Is Still the Commuter Sweet Spot"
 date: 2026-09-13T20:03:00-04:00
 draft: false
 tags: ["e-bikes"]
-image: "/images/hero-2026-09-13-16-inch-euc-commuter-sweet-spot.svg"
+image: "/images/hero-2026-09-13-16-inch-euc-commuter-sweet-spot.jpg"
 description: "Big suspension wheels get the hype, but the old 16-inch electric unicycle formula still explains why EUCs work so well for real commuting."
 ---
 
