@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "exportedAt": 1790798883215,
+  "project": {
+    "id": "blog-2026-09-30-open-controllers-ebike-modding-1790798883215",
+    "name": "Hero: Open Controllers Made E-Bike Modding Weird Again",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "A cluttered DIY e-bike workbench at night: an open electric bike frame with exposed controller, battery pack, torque arms, multimeter leads, laptop showing tuning graphs, and a half-built hub motor wheel. Urban garage shadows, cable spaghetti rendered with Geof Darrow-level mechanical detail and Moebius clean geometry, heavy ink linework, chiaroscuro, cel-shaded shadows, muted grays with one saturated electric-blue accent glow. No text, no logos, no photorealism."
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 50,
+          "y": 500
+        },
+        "data": {
+          "label": "Avoid",
+          "content": "Never include Lemmy Kilmister, Mot\u00f6rhead imagery, metal bassists in leather jackets, or self-portraits of rock legends. No generic punk rockers with mohawks unless specifically requested. Focus on the actual subject matter described in the scene."
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1790798883215,
+    "updatedAt": 1790798883215
+  }
+}
