@@ -23,7 +23,8 @@ from pathlib import Path
 # w33s3 style - consistent dark aesthetic
 W33S3_STYLE = {
     "name": "w33s3 Dark",
-    "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic."
+    "description": "Dark, moody atmosphere with high contrast lighting. Cinematic composition with neon accent colors against deep blacks. Professional photography feel, dramatic shadows, rich color depth. Modern minimalist aesthetic. No speech balloons, captions, sound effects, or visible text anywhere in the image.",
+    "negative": "text, lettering, typography, words, letters, numbers, speech balloons, thought bubbles, comic captions, onomatopoeia, sound effects, labels, signage, logos, UI text, watermark"
 }
 
 # FlowBoard workflow root
@@ -77,6 +78,15 @@ def create_workflow(
                     }
                 },
                 {
+                    "id": "negative-1",
+                    "type": "negative",
+                    "position": {"x": 50, "y": 500},
+                    "data": {
+                        "label": "Avoid",
+                        "content": W33S3_STYLE.get("negative", "")
+                    }
+                },
+                {
                     "id": "parameters-1",
                     "type": "parameters",
                     "position": {"x": 350, "y": 100},
@@ -101,6 +111,7 @@ def create_workflow(
             "edges": [
                 {"id": "e-style-output", "source": "style-1", "target": "output-1"},
                 {"id": "e-action-output", "source": "action-1", "target": "output-1"},
+                {"id": "e-negative-output", "source": "negative-1", "target": "output-1"},
                 {"id": "e-params-output", "source": "parameters-1", "target": "output-1", "targetHandle": "config"}
             ],
             "createdAt": timestamp,
