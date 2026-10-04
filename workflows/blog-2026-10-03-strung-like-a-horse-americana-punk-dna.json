@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "blog-2026-10-03-strung-like-a-horse-americana-punk-dna-1791072172814",
+    "name": "Hero: Strung Like a Horse Makes Americana Feel Like It Escaped the Basement",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 50
+        },
+        "data": {
+          "label": "Style",
+          "name": "Comic Ink + Raw Punk Energy",
+          "description": "Heavy ink illustration. Bold black outlines, high contrast chiaroscuro with deep blacks and stark highlights. Cel-shaded shadows, graphic shapes. High contrast B&W with earth tone pops (brown, rust, ochre). Hand-drawn comic book aesthetic with raw, DIY energy. Influenced by Los Bros Hernandez and Paul Pope. NOT photorealistic. Edge-to-edge composition."
+        }
+      },
+      {
+        "id": "setting-1",
+        "type": "setting",
+        "position": {
+          "x": 50,
+          "y": 200
+        },
+        "data": {
+          "label": "Setting",
+          "description": "Underground rock club, small venue stage, DIY show space with raw lighting"
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 350
+        },
+        "data": {
+          "label": "Action",
+          "content": "A chaotic Tennessee Americana basement show: mandolin, guitar, upright-bass energy, boot-stomp rhythm, junkyard Cadillac/hearse imagery in the background, sweaty crowd close to the stage, no mohawks, no celebrity likenesses, no text. Comic book illustration influenced by Los Bros Hernandez and Paul Pope: heavy black ink linework, chiaroscuro, cel-shaded shadows, high contrast black and white with muted earth-tone pops, edge-to-edge composition."
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 350,
+          "y": 50
+        },
+        "data": {
+          "label": "Negative",
+          "content": "photorealistic, photography, soft gradients, airbrushed, fedoras, 1940s detective imagery, film noir clich\u00e9s, blurry, text, watermark, stock photo, over-rendered, plastic-looking, polished, corporate, arena rock, mainstream pop"
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 200
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 350
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-setting-output",
+        "source": "setting-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1791072172814,
+    "updatedAt": 1791072172814
+  },
+  "exportedAt": 1791072172814
+}
