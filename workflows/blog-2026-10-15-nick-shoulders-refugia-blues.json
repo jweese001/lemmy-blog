@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "exportedAt": 1792080136681,
+  "project": {
+    "id": "blog-2026-10-15-nick-shoulders-refugia-blues-1792080136681",
+    "name": "Hero: Nick Shoulders Turns Country Music Into a Survival Tool",
+    "nodes": [
+      {
+        "id": "style-1",
+        "type": "style",
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "data": {
+          "label": "Style",
+          "name": "Noir Comic Book",
+          "description": "Noir comic book illustration style. Heavy black ink lines, high contrast shading, cel-shaded shadows. Hand-drawn graphic novel aesthetic with bold outlines. Muted palette with selective color pops. Stylized, not photorealistic. No text, watermarks, speech bubbles, or white borders. Edge-to-edge composition filling the entire frame."
+        }
+      },
+      {
+        "id": "action-1",
+        "type": "action",
+        "position": {
+          "x": 50,
+          "y": 300
+        },
+        "data": {
+          "label": "Action",
+          "content": "A content-specific comic-book scene inspired by Nick Shoulders' Refugia Blues: a lanky Arkansas roots singer shown in three-quarter silhouette, alone with an acoustic guitar at a vintage ribbon microphone, whistling as two small Southern songbirds arc overhead. Behind him, an Ozark ridgeline becomes layered topographic contour lines and a dark floodplain, while tough native plants push up through cracked ground, suggesting ecological refugia and climate survival. Intimate handmade stage, visible guitar wood grain and patched road case, no generic mohawks or leather-jacket punk stereotypes. Heavy black ink linework and everyday punk energy influenced by Los Bros Hernandez and Paul Pope, stark chiaroscuro, cel-shaded shadows, mostly black/cream/earth-brown with selective rust-red and swamp-green accents, edge-to-edge 16:9 composition, illustrated not photorealistic, no text, no logos, no watermark."
+        }
+      },
+      {
+        "id": "parameters-1",
+        "type": "parameters",
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "data": {
+          "label": "Parameters",
+          "model": "gemini-pro",
+          "aspectRatio": "16:9",
+          "resolution": "2K"
+        }
+      },
+      {
+        "id": "negative-1",
+        "type": "negative",
+        "position": {
+          "x": 50,
+          "y": 500
+        },
+        "data": {
+          "label": "Avoid",
+          "content": "Never include Lemmy Kilmister, Mot\u00f6rhead imagery, metal bassists in leather jackets, or self-portraits of rock legends. No generic punk rockers with mohawks unless specifically requested. Focus on the actual subject matter described in the scene."
+        }
+      },
+      {
+        "id": "output-1",
+        "type": "output",
+        "position": {
+          "x": 350,
+          "y": 300
+        },
+        "data": {
+          "label": "Output",
+          "promptPreview": "",
+          "status": "idle"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-style-output",
+        "source": "style-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-negative-output",
+        "source": "negative-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-action-output",
+        "source": "action-1",
+        "target": "output-1"
+      },
+      {
+        "id": "e-params-output",
+        "source": "parameters-1",
+        "target": "output-1",
+        "targetHandle": "config"
+      }
+    ],
+    "createdAt": 1792080136681,
+    "updatedAt": 1792080136681
+  }
+}
